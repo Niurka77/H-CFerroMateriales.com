@@ -1,0 +1,337 @@
+ <style>
+        /* Custom animations */
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        @keyframes moveTruck {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes sparkle {
+            0%, 100% {
+                filter: brightness(100%);
+                transform: rotate(0deg);
+            }
+            50% {
+                filter: brightness(150%);
+                transform: rotate(10deg);
+            }
+        }
+        
+        .animate-marquee { animation: marquee 15s linear infinite; }
+        .animate-truck-move { animation: moveTruck 2s infinite; }
+        .animate-bounce-custom { animation: bounce 2s infinite; }
+        .animate-sparkle { animation: sparkle 2s infinite; }
+        
+        /* Glass morphism effects */
+        .glass-bg {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .glass-hover:hover {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+        }
+        
+        /* Gradient backgrounds */
+        .gradient-main {
+            background: linear-gradient(135deg, #b22222 0%, #ff8c00 50%, #cd853f 100%);
+        }
+        
+        .gradient-hover:hover {
+            background: linear-gradient(135deg, #cd853f 0%, #ff8c00 50%, #b22222 100%);
+        }
+        
+        /* Custom scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Elegant header styling */
+        .elegant-header {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            position: relative;
+        }
+        
+        .elegant-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #b22222 0%, #ff8c00 50%, #cd853f 100%);
+            opacity: 0.8;
+        }
+        
+        /* Navigation improvements */
+        .nav-item-modern {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-item-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .nav-item-modern:hover::before {
+            left: 100%;
+        }
+        
+        /* Mobile sidebar improvements */
+        .mobile-sidebar {
+            background: linear-gradient(135deg, #b22222 0%, #ff8c00 50%, #cd853f 100%);
+            width: 20rem;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .mobile-menu-item {
+            position: relative;
+        }
+        
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #fff3cd, #ffd700);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu-item:hover::before {
+            transform: scaleY(1);
+        }
+    </style>
+     <!-- Elegant Header -->
+    <header class="elegant-header">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+                <!-- Contact Info -->
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center text-gray-600 hover:text-brand-red transition-all duration-300 hover:-translate-y-0.5 px-2 py-1 rounded-lg hover:bg-red-50">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                        <span class="text-sm font-medium">Pomalca, Chiclayo, Lambayeque</span>
+                    </div>
+                </div>
+                
+                <!-- Elegant Marquee -->
+                <div class="flex-1 lg:max-w-2xl">
+                    <div class="overflow-hidden py-2">
+                        <div class="animate-marquee whitespace-nowrap text-black font-bold text-sm tracking-wide">
+                            ✨ Agregados directo de cantera a tu obra: arena, piedra chancada, afirmado y más • Calidad garantizada • Entrega rápida ✨
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition-all duration-300 hover:-translate-y-1 px-3 py-2 rounded-lg hover:bg-blue-50 hover:shadow-md">
+                        <i class="fab fa-facebook-f mr-2"></i>
+                        <span class="hidden sm:inline text-sm font-medium">Facebook</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@chiclayojh" target="_blank" class="flex items-center text-gray-600 hover:text-black transition-all duration-300 hover:-translate-y-1 px-3 py-2 rounded-lg hover:bg-gray-100 hover:shadow-md">
+                        <i class="fab fa-tiktok mr-2"></i>
+                        <span class="hidden sm:inline text-sm font-medium">TikTok</span>
+                    </a>
+                    <a href="tel:+51971164073" class="flex items-center text-gray-600 hover:text-green-600 transition-all duration-300 hover:-translate-y-1 px-3 py-2 rounded-lg hover:bg-green-50 hover:shadow-md">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        <span class="text-sm font-medium">971 164 073</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="gradient-main sticky top-0 z-30 relative">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+                    <a href="index.html" class="block">
+                        <img src="img/Logo-mejorado-removebg-preview.png" 
+                             alt="HC Ferromateriales" 
+                             class="h-12 md:h-16 lg:h-18 w-auto max-w-48 filter drop-shadow-lg">
+                    </a>
+                </div>
+                
+                <!-- Mobile Controls -->
+                <div class="lg:hidden flex items-center gap-3">
+                    <!-- Mobile Cart -->
+                    <div class="glass-bg glass-hover rounded-xl p-3 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                        <a href="cotizacion.html" class="block relative">
+                            <i class="fas fa-shopping-cart text-white text-lg"></i>
+                            <span class="absolute -top-2 -right-2 bg-gradient-to-r from-orange-400 to-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white animate-pulse" id="cart-count-mobile">0</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Hamburger Button -->
+                    <button class="glass-bg glass-hover rounded-lg p-2 transition-all duration-300 hover:scale-105" onclick="toggleMenu()">
+                        <div class="w-6 h-6 flex flex-col justify-center items-center">
+                            <div class="w-5 h-0.5 bg-white rounded transition-all duration-300 mb-1"></div>
+                            <div class="w-5 h-0.5 bg-white rounded transition-all duration-300 mb-1"></div>
+                            <div class="w-5 h-0.5 bg-white rounded transition-all duration-300"></div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="acerca.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span>Acerca</span>
+                    </a>
+                    <a href="productos.php" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-box mr-2"></i>
+                        <span>Productos</span>
+                    </a>
+                    <a href="agregados.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-cubes mr-2"></i>
+                        <span>Agregados</span>
+                    </a>
+                    <a href="ladrillos.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-tools mr-2"></i>
+                        <span>Ladrillos</span>
+                    </a>
+                    <a href="maquinaria.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-cogs mr-2"></i>
+                        <span>Maquinaria</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Cart -->
+                <div class="hidden lg:block">
+                    <div class="glass-bg glass-hover rounded-xl p-3 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                        <a href="cotizacion.html" class="block relative">
+                            <i class="fas fa-shopping-cart text-white text-xl"></i>
+                            <span class="absolute -top-2 -right-2 bg-gradient-to-r from-orange-400 to-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white animate-pulse" id="cart-count-desktop">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div id="sidebar" class="mobile-sidebar fixed top-0 left-0 h-full overflow-y-auto transform -translate-x-full transition-transform duration-500 ease-out z-50">
+        <!-- Sidebar Header -->
+        <div class="bg-black bg-opacity-20 border-b border-white border-opacity-10 p-6 relative">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-bars text-white text-lg mr-3"></i>
+                    <h2 class="text-white text-lg font-bold font-poppins">Menú Principal</h2>
+                </div>
+                <button class="text-white text-xl hover:text-yellow-200 transition-colors duration-300" onclick="toggleMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-white via-50% to-transparent opacity-30"></div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="py-4">
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="index.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-home mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Inicio</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="acerca.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-info-circle mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Acerca de Nosotros</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="productos.php" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-box mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Productos</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="agregados.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-cubes mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Agregados</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="ladrillos.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-tools mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Ladrillos</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="maquinaria.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-cogs mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Maquinaria y Proyectos</span>
+                </a>
+            </div>
+            
+            <!-- Separator -->
+            <div class="my-6 mx-6 h-px bg-gradient-to-r from-transparent via-white via-50% to-transparent opacity-20"></div>
+            
+            <!-- Quick Contact -->
+            <div class="px-6 py-2">
+                <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider opacity-80">Contacto Directo</h3>
+                <div class="space-y-3">
+                    <a href="tel:+51971164073" class="flex items-center text-white hover:text-green-300 transition-colors duration-300 p-2 rounded-lg hover:bg-white hover:bg-opacity-10">
+                        <i class="fab fa-whatsapp mr-3 text-green-400 text-lg"></i>
+                        <div>
+                            <div class="font-medium">WhatsApp</div>
+                            <div class="text-sm opacity-80">971 164 073</div>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/" target="_blank" class="flex items-center text-white hover:text-blue-300 transition-colors duration-300 p-2 rounded-lg hover:bg-white hover:bg-opacity-10">
+                        <i class="fab fa-facebook-f mr-3 text-blue-400 text-lg"></i>
+                        <div>
+                            <div class="font-medium">Facebook</div>
+                            <div class="text-sm opacity-80">HC Ferromateriales</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm hidden z-40 transition-all duration-300" onclick="toggleMenu()"></div>
+<script>
+     // Menu toggle
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        }
+        
+        // Close sidebar with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const sidebar = document.getElementById('sidebar');
+                if (sidebar && !sidebar.classList.contains('-translate-x-full')) {
+                    toggleMenu();
+                }
+            }
+        });
+</script>
