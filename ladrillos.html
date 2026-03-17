@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="H&C FerroMateriales S.R.L: Líder en agregados como arena y piedra chancada en Chiclayo. Calidad garantizada.">
+    <meta name="keywords" content="Ferretería, Materiales de Construcción, Pomalca, Cemento, Piedra Chancada, Volquetes, Tractores">
+    <meta name="author" content="H&C FerroMateriales S.R.L">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="H&C FerroMateriales S.R.L - Materiales de Construcción y Equipos">
+    <meta property="og:description" content="Tu ferretería confiable en Pomalca, con los mejores agregados y maquinaria para construcción.">
+    <meta property="og:image" content="img/trabajador.jpeg">
+    <meta property="og:url" content="https://hycferromateriales.com">
+    <meta property="og:type" content="website">
+    <title>H&C FerroMateriales S.R.L - Materiales de Construcción y Equipos</title>
+    <link rel="icon" href="./img/logoferreteria.ico" type="image/x-icon">
+   
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ShoppingCart",
+      "name": "H&C FerroMateriales S.R.L - Carrito",
+      "description": "Carrito de compras para agregados de construcción",
+      "telephone": "+51 971164073",
+      "url": "https://hycferromateriales.com/carrito"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff8c00',
+                        secondary: '#ff2f00',
+                        accent: '#3498db',
+                        dark: '#2c3e50',
+                        light: '#f8f9fa'
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in-down': 'fadeInDown 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 2s infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                        'counter': 'counter 1.5s ease-out',
+                        'glow': 'glow 3s ease-in-out infinite alternate'
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-6px)' }
+                        },
+                        counter: {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px rgba(255, 140, 0, 0.3)' },
+                            '100%': { boxShadow: '0 0 15px rgba(255, 140, 0, 0.6)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        /* Efectos personalizados más sutiles */
+        .glass-effect {
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .text-shadow {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #ff8c00, #ff2f00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Scrollbar personalizado más sutil */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #ff8c00, #ff2f00);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #ff2f00, #ff8c00);
+        }
+
+        /* Botón WhatsApp flotante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #25d366;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 16px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+    
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/971164073?text=Hola,%20quiero%20información%20sobre%20sus%20productos" 
+       target="_blank" 
+       class="whatsapp-float animate-bounce-slow"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-xl"></i>
+    </a>
+
+    <!-- Navigation Container -->
+    <div id="nav-container"></div>
+    
+    <!-- Sección Hero con Video -->
+    <section class="relative h-screen overflow-hidden">
+        <!-- Video de fondo -->
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+            <source src="./imagenesotraseccion/larrifondo.mp4" type="video/mp4">
+            <source src="./imagenesotraseccion/larrifondo.webm" type="video/webm">
+        </video>
+        
+        <!-- Overlay con gradiente -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50"></div>
+        
+        <!-- Contenido principal -->
+        <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Línea decorativa superior -->
+                <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent mx-auto animate-fade-in-down"></div>
+                
+                <!-- Título principal -->
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white text-shadow animate-fade-in-down font-poppins">
+                    Ladrillos que Construyen
+                    <span class="block text-primary">Confianza</span>
+                </h1>
+                
+                <!-- Subtítulo -->
+                <h2 class="text-lg md:text-xl lg:text-2xl text-gray-200 animate-fade-in-up font-light">
+                    Ladrillos H y C Ferromateriales
+                </h2>
+                
+                <!-- Contador de años -->
+                <div class="flex items-center justify-center space-x-4 animate-fade-in-up">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-primary animate-counter">
+                            <span id="years-counter">0</span>+
+                        </div>
+                        <div class="text-white text-sm">Años de Experiencia</div>
+                    </div>
+                </div>
+                
+                <!-- Línea decorativa inferior -->
+                <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent mx-auto animate-fade-in-up"></div>
+                
+                <!-- Botones de acción -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
+                    <button onclick="scrollToSection('productos')" 
+                            class="bg-primary hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105">
+                        <i class="fas fa-eye mr-2"></i>Ver Productos
+                    </button>
+                    <button onclick="sendWhatsApp('Quiero información general')" 
+                            class="glass-effect text-white border border-white/30 hover:border-white/60 px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105">
+                        <i class="fas fa-phone mr-2"></i>Contactar
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll -->
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-lg opacity-60"></i>
+        </div>
+    </section>
+
+    <!-- Tarjetas flotantes -->
+    <section class="relative -mt-16 z-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta Calidad -->
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover-lift group animate-slide-in-left">
+                    <div class="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                        <i class="fas fa-award text-white text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3 group-hover:text-primary transition-colors duration-300">Calidad</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Productos certificados con los más altos estándares de calidad en la industria.</p>
+                    <div class="mt-4 flex justify-center space-x-1">
+                        <i class="fas fa-star text-yellow-400 text-sm"></i>
+                        <i class="fas fa-star text-yellow-400 text-sm"></i>
+                        <i class="fas fa-star text-yellow-400 text-sm"></i>
+                        <i class="fas fa-star text-yellow-400 text-sm"></i>
+                        <i class="fas fa-star text-yellow-400 text-sm"></i>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta Dureza -->
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover-lift group animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-accent to-blue-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-hammer text-white text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3 group-hover:text-accent transition-colors duration-300">Dureza</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Resistencia excepcional que garantiza la durabilidad de tus construcciones.</p>
+                    <div class="mt-4">
+                        <div class="bg-gray-200 rounded-full h-1.5">
+                            <div class="bg-gradient-to-r from-accent to-blue-600 h-1.5 rounded-full w-5/6"></div>
+                        </div>
+                        <span class="text-xs text-gray-500 mt-2 block">95% Resistencia</span>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta Aislamiento -->
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover-lift group animate-slide-in-right" style="animation-delay: 0.4s;">
+                    <div class="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-white text-lg"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3 group-hover:text-green-600 transition-colors duration-300">Aislamiento</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Excelente aislamiento térmico y acústico para mayor confort.</p>
+                    <div class="mt-4 flex justify-center space-x-3">
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-thermometer-half text-red-500"></i>
+                            <span class="text-xs text-gray-500">Térmico</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-volume-mute text-blue-500"></i>
+                            <span class="text-xs text-gray-500">Acústico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestra Mística -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <!-- Contenido de texto -->
+                <div class="space-y-6 animate-slide-in-left">
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-bold gradient-text mb-3 font-poppins">
+                            NUESTRA MÍSTICA
+                        </h2>
+                        <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-6"></div>
+                    </div>
+                    
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p class="flex items-start space-x-3">
+                            <i class="fas fa-quote-left text-primary text-lg mt-1 flex-shrink-0"></i>
+                            <span>En FerroMateriales H y C la voz del cliente es nuestra mejor guía.</span>
+                        </p>
+                        
+                        <p class="flex items-start space-x-3">
+                            <i class="fas fa-star text-primary text-lg mt-1 flex-shrink-0"></i>
+                            <span>Brindamos productos y servicios de excelente calidad que satisfagan y superen las expectativas al más bajo costo posible.</span>
+                        </p>
+                        
+                        <p class="flex items-start space-x-3">
+                            <i class="fas fa-heart text-primary text-lg mt-1 flex-shrink-0"></i>
+                            <span>Brindamos a nuestros clientes un trato cordial y tomamos sus necesidades para resolverlas como nuestra prioridad.</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Estadísticas -->
+                    <div class="grid grid-cols-2 gap-6 py-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">1000+</div>
+                            <div class="text-gray-600 text-sm">Clientes Satisfechos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">50+</div>
+                            <div class="text-gray-600 text-sm">Productos Diferentes</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <button onclick="sendWhatsApp('Quiero una cotización')" 
+                                class="bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                            <i class="fas fa-calculator"></i>
+                            <span>COTIZACIONES</span>
+                        </button>
+                        <button onclick="scrollToSection('productos')" 
+                                class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                            <i class="fas fa-eye"></i>
+                            <span>VER CATÁLOGO</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Galería de imágenes -->
+                <div class="relative animate-slide-in-right">
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="space-y-3">
+                            <img src="./imagenesotraseccion/section.webp" 
+                                 alt="Proceso de fabricación" 
+                                 class="w-full h-36 object-cover rounded-xl shadow-md hover-lift"
+                                 loading="lazy">
+                            <img src="./imagenesotraseccion/section 2.webp" 
+                                 alt="Control de calidad" 
+                                 class="w-full h-24 object-cover rounded-xl shadow-md hover-lift"
+                                 loading="lazy">
+                        </div>
+                        <div class="mt-6">
+                            <img src="./imagenesotraseccion/section 3.webp" 
+                                 alt="Productos terminados" 
+                                 class="w-full h-48 object-cover rounded-xl shadow-md hover-lift"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <!-- Elemento decorativo -->
+                    <div class="absolute -top-2 -right-2 w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full animate-float"></div>
+                    <div class="absolute -bottom-2 -left-2 w-12 h-12 bg-gradient-to-br from-accent/20 to-blue-600/20 rounded-full animate-float" style="animation-delay: 1s;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Encabezado -->
+            <div class="text-center mb-12 animate-fade-in-up">
+                <h2 class="text-3xl lg:text-4xl font-bold text-dark mb-4 font-poppins">
+                    Fábrica de ladrillos, bloques cerámicos y termoarcilla
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Con una experiencia de más de <span class="font-bold text-primary">30 años</span>, 
+                    FerroMateriales H y C le ofrece soluciones constructivas que garantizan 
+                    <span class="font-semibold">aislamiento térmico, acústico y resistencia al fuego</span>, 
+                    y además son respetuosas con el medio ambiente.
+                </p>
+            </div>
+
+            <!-- Navegación por marcas -->
+            <div class="mb-10">
+                <div class="flex flex-wrap justify-center gap-2 mb-6">
+                    <button onclick="showAllBrands()" 
+                            class="brand-btn active bg-gradient-to-r from-primary to-secondary text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105 flex items-center space-x-2">
+                        <i class="fas fa-th-large text-sm"></i>
+                        <span>Todas las Marcas</span>
+                    </button>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
+                    <button onclick="scrollToSection('tayson')" 
+                            class="brand-btn bg-white border border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Tayson" class="w-4 h-4">
+                        <span class="text-xs">Tayson</span>
+                    </button>
+                    
+                    <button onclick="scrollToSection('ital')" 
+                            class="brand-btn bg-white border border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Ital" class="w-4 h-4">
+                        <span class="text-xs">Ital</span>
+                    </button>
+                    
+                    <button onclick="scrollToSection('lark')" 
+                            class="brand-btn bg-white border border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Lark" class="w-4 h-4">
+                        <span class="text-xs">Lark</span>
+                    </button>
+                    
+                    <button onclick="scrollToSection('ceramicos-lambayeque')" 
+                            class="brand-btn bg-white border border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Cerámicos Lambayeque" class="w-4 h-4">
+                        <span class="text-xs">C. Lambayeque</span>
+                    </button>
+                    
+                    <button onclick="scrollToSection('cruz-chalpon')" 
+                            class="brand-btn bg-white border border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Cruz de Chalpon" class="w-4 h-4">
+                        <span class="text-xs">Cruz Chalpon</span>
+                    </button>
+                    
+                    <button onclick="scrollToSection('galca')" 
+                            class="brand-btn bg-white border border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Galca" class="w-4 h-4">
+                        <span class="text-xs">Galca</span>
+                    </button>
+                    
+                    <button onclick="scrollToSection('piramide')" 
+                            class="brand-btn bg-white border border-gray-200 hover:border-primary text-gray-700 hover:text-primary px-3 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Pirámide" class="w-4 h-4">
+                        <span class="text-xs">Pirámide</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sección Tayson -->
+            <div id="tayson" class="brand-section mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-3 flex items-center justify-center space-x-3">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Tayson" class="w-6 h-6">
+                        <span>Ladrillos Tayson</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Pandereta Tayson -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/Ladrillo-Pandereta-tayson.webp" 
+                                 alt="Ladrillo Tayson Pandereta" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Tayson
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pandereta</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-primary mr-2"></i>
+                                9 x 11 x 23 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Calidad Premium</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pandereta Tayson - 9x11x23')" 
+                                    class="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pandereton Tayson -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/pandereton-tayson.webp" 
+                                 alt="Pandereton Tayson" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Tayson
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pandereton</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-primary mr-2"></i>
+                                12 x 14.5 x 24.5 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Resistente</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pandereton Tayson - 12x14.5x24.5')" 
+                                    class="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- King Kong 18 Huecos Tayson -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/KK18 huecos-tayson.webp" 
+                                 alt="King Kong 18 Huecos Tayson" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Tayson
+                            </div>
+                            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Popular
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">King Kong 18 Huecos</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-primary mr-2"></i>
+                                9 x 12 x 24 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Más Vendido</span>
+                            </div>
+                            <button onclick="sendWhatsApp('King Kong 18 Huecos Tayson - 9x12x24')" 
+                                    class="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tipo IV Tayson -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/tipo IV.webp" 
+                                 alt="Tipo IV Tayson" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Tayson
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Tipo IV</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-primary mr-2"></i>
+                                9 x 13 x 24 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Estructural</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Tipo IV Tayson - 9x13x24')" 
+                                    class="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 12 Tayson -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo-12-tayson.webp" 
+                                 alt="Techo 12 Tayson" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Tayson
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 12</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-primary mr-2"></i>
+                                12 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Para Techos</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 12 Tayson - 12x30x30')" 
+                                    class="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 15 Tayson -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo-15-tayson.webp" 
+                                 alt="Techo 15 Tayson" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Tayson
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 15</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-primary mr-2"></i>
+                                15 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Mayor Grosor</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 15 Tayson - 15x30x30')" 
+                                    class="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pastelero Tayson -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/tayson-pastelero.webp" 
+                                 alt="Pastelero Tayson" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Tayson
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pastelero</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-primary mr-2"></i>
+                                3 x 25 x 25 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Decorativo</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pastelero Tayson - 3x25x25')" 
+                                    class="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Ital -->
+            <div id="ital" class="brand-section mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-3 flex items-center justify-center space-x-3">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Ital" class="w-6 h-6">
+                        <span>Ladrillos Ital</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-gradient-to-r from-accent to-blue-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Pandereta Ital -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/pandereta-ital.webp" 
+                                 alt="Pandereta Ital" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Ital
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pandereta</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-accent mr-2"></i>
+                                9 x 11 x 22 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Calidad Ital</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pandereta Ital - 9x11x22')" 
+                                    class="w-full bg-gradient-to-r from-accent to-blue-600 hover:from-blue-600 hover:to-accent text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- King Kong 18 Huecos Ital -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/KK18-ITAL.avif" 
+                                 alt="King Kong 18 Huecos Ital" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Ital
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">King Kong 18 Huecos</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-accent mr-2"></i>
+                                9 x 12 x 24 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Resistente</span>
+                            </div>
+                            <button onclick="sendWhatsApp('King Kong 18 Huecos Ital - 9x12x24')" 
+                                    class="w-full bg-gradient-to-r from-accent to-blue-600 hover:from-blue-600 hover:to-accent text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pastelero Ital -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/pastelero-ital.avif" 
+                                 alt="Pastelero Ital" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Ital
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pastelero</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-accent mr-2"></i>
+                                3 x 25 x 25 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Decorativo</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pastelero Ital - 3x25x25')" 
+                                    class="w-full bg-gradient-to-r from-accent to-blue-600 hover:from-blue-600 hover:to-accent text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 12 Ital -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo-12-ital.avif" 
+                                 alt="Techo 12 Ital" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Ital
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 12</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-accent mr-2"></i>
+                                12 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Para Techos</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 12 Ital - 12x30x30')" 
+                                    class="w-full bg-gradient-to-r from-accent to-blue-600 hover:from-blue-600 hover:to-accent text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 15 Ital -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo 15 ital.webp" 
+                                 alt="Techo 15 Ital" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Ital
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 15</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-accent mr-2"></i>
+                                15 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Mayor Grosor</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 15 Ital - 15x30x30')" 
+                                    class="w-full bg-gradient-to-r from-accent to-blue-600 hover:from-blue-600 hover:to-accent text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Lark -->
+            <div id="lark" class="brand-section mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-3 flex items-center justify-center space-x-3">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Lark" class="w-6 h-6">
+                        <span>Ladrillos Lark</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-gradient-to-r from-green-500 to-emerald-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Pandereta Lark -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/pandereta-lark.webp" 
+                                 alt="Pandereta Lark" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lark
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pandereta</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-green-500 mr-2"></i>
+                                9 x 10.5 x 23 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Calidad Lark</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pandereta Lark - 9x10.5x23')" 
+                                    class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- King Kong 18 Huecos Lark -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/KK18-LARK.webp" 
+                                 alt="King Kong 18 Huecos Lark" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lark
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">King Kong 18 Huecos</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-green-500 mr-2"></i>
+                                9 x 12.5 x 23 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Resistente</span>
+                            </div>
+                            <button onclick="sendWhatsApp('King Kong 18 Huecos Lark - 9x12.5x23')" 
+                                    class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 12 Lark -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo 12 -LARK.webp" 
+                                 alt="Techo 12 Lark" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lark
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 12</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-green-500 mr-2"></i>
+                                12 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Para Techos</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 12 Lark - 12x30x30')" 
+                                    class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 15 Lark -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo 15-Lark.webp" 
+                                 alt="Techo 15 Lark" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lark
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 15</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-green-500 mr-2"></i>
+                                15 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Mayor Grosor</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 15 Lark - 15x30x30')" 
+                                    class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Cerámicos Lambayeque -->
+            <div id="ceramicos-lambayeque" class="brand-section mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-3 flex items-center justify-center space-x-3">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Cerámicos Lambayeque" class="w-6 h-6">
+                        <span>Ladrillos Cerámicos Lambayeque</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-gradient-to-r from-purple-500 to-pink-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Pandereta Lambayeque -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/ceramicos-pandereta.webp" 
+                                 alt="Pandereta Lambayeque" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lambayeque
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pandereta</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-purple-500 mr-2"></i>
+                                9 x 11 x 11 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Cerámico</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pandereta Lambayeque - 9x11x11')" 
+                                    class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- King Kong 18 Huecos Lambayeque -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/18H-CERAMICOS.webp" 
+                                 alt="King Kong 18 Huecos Lambayeque" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lambayeque
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">King Kong 18 Huecos</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-purple-500 mr-2"></i>
+                                9 x 12 x 24 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Resistente</span>
+                            </div>
+                            <button onclick="sendWhatsApp('King Kong 18 Huecos Lambayeque - 9x12x24')" 
+                                    class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 12 Lambayeque -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/ceramico-techo 12.webp" 
+                                 alt="Techo 12 Lambayeque" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lambayeque
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 12</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-purple-500 mr-2"></i>
+                                12 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Para Techos</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 12 Lambayeque - 12x30x30')" 
+                                    class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 15 Lambayeque -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/ceramico -techo 15.webp" 
+                                 alt="Techo 15 Lambayeque" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lambayeque
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 15</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-purple-500 mr-2"></i>
+                                15 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Mayor Grosor</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 15 Lambayeque - 15x30x30')" 
+                                    class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 20 Lambayeque -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/ceramico-techo 20.webp" 
+                                 alt="Techo 20 Lambayeque" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lambayeque
+                            </div>
+                            <div class="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Especial
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 20</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-purple-500 mr-2"></i>
+                                20 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Extra Grueso</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 20 Lambayeque - 20x30x30')" 
+                                    class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Super King Kong Lambayeque -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/ceramico-super king kong.webp" 
+                                 alt="Super King Kong Lambayeque" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Lambayeque
+                            </div>
+                            <div class="absolute top-3 left-3 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Premium
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Super King Kong</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-purple-500 mr-2"></i>
+                                19 x 12 x 39 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Extra Grande</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Super King Kong Lambayeque - 19x12x39')" 
+                                    class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-pink-600 hover:to-purple-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Cruz de Chalpon -->
+            <div id="cruz-chalpon" class="brand-section mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-3 flex items-center justify-center space-x-3">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Cruz de Chalpon" class="w-6 h-6">
+                        <span>Ladrillos Cruz de Chalpon</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-gradient-to-r from-red-500 to-orange-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- King Kong 18 Huecos Cruz de Chalpon -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/king kong-cruz.webp" 
+                                 alt="King Kong 18 Huecos Cruz de Chalpon" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Cruz Chalpon
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">King Kong 18 Huecos</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-red-500 mr-2"></i>
+                                9 x 12.5 x 23 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Tradicional</span>
+                            </div>
+                            <button onclick="sendWhatsApp('King Kong 18 Huecos Cruz de Chalpon - 9x12.5x23')" 
+                                    class="w-full bg-gradient-to-r from-red-500 to-orange-600 hover:from-orange-600 hover:to-red-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pandereta Cruz de Chalpon -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/pandereta-cruz.webp" 
+                                 alt="Pandereta Cruz de Chalpon" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Cruz Chalpon
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pandereta</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-red-500 mr-2"></i>
+                                9 x 11 x 22.5 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Calidad</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pandereta Cruz de Chalpon - 9x11x22.5')" 
+                                    class="w-full bg-gradient-to-r from-red-500 to-orange-600 hover:from-orange-600 hover:to-red-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Galca -->
+            <div id="galca" class="brand-section mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-3 flex items-center justify-center space-x-3">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Galca" class="w-6 h-6">
+                        <span>Ladrillos Galca</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Techo 15 Galca -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo 15-galca.webp" 
+                                 alt="Techo 15 Galca" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-indigo-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Galca
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 15</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-indigo-500 mr-2"></i>
+                                15 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Para Techos</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 15 Galca - 15x30x30')" 
+                                    class="w-full bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-blue-600 hover:to-indigo-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Techo 12 Galca -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/techo-12 -galca.webp" 
+                                 alt="Techo 12 Galca" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-indigo-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Galca
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Techo 12</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-indigo-500 mr-2"></i>
+                                12 x 30 x 30 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Estándar</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Techo 12 Galca - 12x30x30')" 
+                                    class="w-full bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-blue-600 hover:to-indigo-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Pirámide -->
+            <div id="piramide" class="brand-section mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-3 flex items-center justify-center space-x-3">
+                        <img src="./imagenesotraseccion/icono-ladrillo.webp" alt="Pirámide" class="w-6 h-6">
+                        <span>Ladrillos Pirámide</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-gradient-to-r from-yellow-500 to-orange-500 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Pastelero Pirámide -->
+                    <div class="product-card bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group hover-lift">
+                        <div class="relative overflow-hidden">
+                            <img src="./imagenesotraseccion/pastelero-ital.avif" 
+                                 alt="Pastelero Pirámide" 
+                                 class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                Pirámide
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-lg font-bold text-dark mb-2">Pastelero</h4>
+                            <p class="text-gray-600 mb-3 flex items-center text-sm">
+                                <i class="fas fa-ruler text-yellow-500 mr-2"></i>
+                                3 x 24 x 24 cm
+                            </p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-1">
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                </div>
+                                <span class="text-xs text-gray-500">Decorativo</span>
+                            </div>
+                            <button onclick="sendWhatsApp('Pastelero Pirámide - 3x24x24')" 
+                                    class="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500 text-white py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2">
+                                <i class="fas fa-calculator text-sm"></i>
+                                <span>Cotizar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script>
+        // Contador de años animado
+        document.addEventListener("DOMContentLoaded", function () {
+            const yearsElement = document.getElementById("years-counter");
+            let years = 1;
+            const interval = setInterval(() => {
+                if (years <= 30) {
+                    yearsElement.textContent = years++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 50);
+        });
+
+        // Función para scroll suave a secciones
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Función para enviar mensaje por WhatsApp
+        function sendWhatsApp(productName) {
+            const message = `Hola, estoy interesado en el producto: ${productName}. ¿Podrían darme más información y precio?`;
+            const phoneNumber = '51971164073';
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Función para mostrar todas las marcas
+        function showAllBrands() {
+            const brandSections = document.querySelectorAll('.brand-section');
+            brandSections.forEach(section => {
+                section.style.display = 'block';
+            });
+            
+            // Actualizar botones activos
+            const brandButtons = document.querySelectorAll('.brand-btn');
+            brandButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Función para filtrar por marca
+        function filterByBrand(brandId) {
+            const brandSections = document.querySelectorAll('.brand-section');
+            brandSections.forEach(section => {
+                if (section.id === brandId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Animaciones al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animaciones
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.product-card, .brand-section h3');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+
+        // Lazy loading para imágenes
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+
+    <!-- Include Scripts -->
+    <script src="js/include-nav.js"></script>
+    <script src="js/include-footer.js"></script>
+    <script src="js/navbar-control.js"></script>
+</body>
+</html>

@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="H&C FerroMateriales S.R.L: Catálogo completo de productos - Materiales de construcción, herramientas y más">
+    <meta name="keywords" content="Ferretería, Materiales de Construcción, Pomalca, Cemento, Piedra Chancada, Herramientas">
+    <meta name="author" content="H&C FerroMateriales S.R.L">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Productos - H&C FerroMateriales S.R.L">
+    <meta property="og:description" content="Descubre nuestro amplio catálogo de productos para construcción">
+    <meta property="og:image" content="img/trabajador.jpeg">
+    <meta property="og:url" content="https://hycferromateriales.com/productos">
+    <meta property="og:type" content="website">
+    
+    <title>Productos - H&C FerroMateriales S.R.L</title>
+    <link rel="icon" href="./img/logoferreteria.ico" type="image/x-icon">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HardwareStore",
+      "name": "H&C FerroMateriales S.R.L",
+      "image": "img/trabajador.jpeg",
+      "description": "Catálogo completo de productos para construcción y ferretería",
+      "telephone": "+51 971164073",
+      "url": "https://hycferromateriales.com"
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'terracota': {
+                            50: '#fdf4f3',
+                            100: '#fce8e6',
+                            200: '#f9d5d3',
+                            300: '#f4b5b0',
+                            400: '#ec8b85',
+                            500: '#e0645c',
+                            600: '#cd4a42',
+                            700: '#ab3a33',
+                            800: '#8d312b',
+                            900: '#762d28',
+                        },
+                        'naranja': {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        },
+                        'brand-terracota': '#CD4A42',
+                        'brand-naranja': '#F97316',
+                        'brand-naranja-dark': '#EA580C',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'scale-in': 'scaleIn 0.4s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                        'shimmer': 'shimmer 2s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(249, 115, 22, 0.4)' },
+                            '50%': { boxShadow: '0 0 40px rgba(249, 115, 22, 0.8)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-gradient-to-br from-orange-50 via-white to-red-50 text-gray-800 min-h-screen">
+    
+      <!-- Navigation Container -->
+    <div id="nav-container"></div>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-terracota-600 via-naranja-500 to-terracota-500 text-white py-32 overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full animate-pulse-glow"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full animate-bounce-slow"></div>
+            <div class="absolute top-1/2 left-1/4 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
+            <div class="absolute top-1/4 right-1/3 w-24 h-24 bg-white/15 rounded-full animate-wiggle"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-slide-up">
+                <h1 class="font-poppins font-bold text-5xl lg:text-7xl mb-6">
+                    Agregados de <span class="text-yellow-300">Construcción</span>
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
+                    🏗️ Directo de cantera a tu obra • 🚚 Entrega garantizada • 💎 Calidad superior
+                </p>
+                <div class="flex justify-center items-center space-x-6 mb-8">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center animate-bounce-slow">
+                        <i class="fas fa-mountain text-3xl"></i>
+                    </div>
+                    <div class="w-16 h-16 bg-white/15 rounded-full flex items-center justify-center animate-float">
+                        <i class="fas fa-truck text-2xl"></i>
+                    </div>
+                    <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center animate-pulse">
+                        <i class="fas fa-cubes text-4xl"></i>
+                    </div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
+                    <p class="text-lg font-semibold mb-2">🎯 Pedido mínimo: 10 m³</p>
+                    <p class="text-base opacity-90">Precios especiales para volúmenes mayores</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Wave -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16 fill-current text-orange-50">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Delivery Location Section -->
+    <section class="py-16 bg-gradient-to-r from-orange-50 to-red-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-orange-100 animate-fade-in">
+                <div class="text-center mb-10">
+                    <h2 class="font-poppins font-bold text-4xl text-gray-900 mb-4">
+                        <i class="fas fa-map-marker-alt text-brand-naranja mr-3"></i>
+                        Selecciona tu Ubicación de Entrega
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Los precios se actualizarán automáticamente según tu ubicación
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <label class="block text-sm font-bold text-gray-700 uppercase tracking-wide">
+                            <i class="fas fa-truck mr-2 text-brand-naranja"></i>Destino de Entrega
+                        </label>
+                        <div class="relative">
+                            <select name="destino" id="destinoSelect" 
+                                    class="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:border-brand-naranja focus:ring-4 focus:ring-naranja-100 transition-all duration-300 bg-gray-50 focus:bg-white appearance-none cursor-pointer text-lg font-medium">
+                                <option value="cantera">🏭 Cantera (Recojo en planta)</option>
+                                <option value="chiclayo">🏙️ Chiclayo</option>
+                                <option value="chongoyape">🏘️ Chongoyape</option>
+                                <option value="patapo">🌾 Pátapo</option>
+                                <option value="lambayeque">🏛️ Lambayeque</option>
+                                <option value="pimentel">🏖️ Pimentel</option>
+                                <option value="santarosa">🌹 Santa Rosa</option>
+                                <option value="monsefu">🎭 Monsefú</option>
+                                <option value="morrope">🌾 Mórrope</option>
+                                <option value="ferrenafe">🏘️ Ferreñafe</option>
+                                <option value="picsi">🌱 Picsi</option>
+                                <option value="tranca">🛤️ Tranca Fanupe</option>
+                                <option value="eten">⛪ Eten</option>
+                                <option value="puertoeten">⚓ Puerto Eten</option>
+                                <option value="reque">🏘️ Reque</option>
+                                <option value="montegrandereque">🏔️ Montegrande Reque</option>
+                                <option value="pomalca">🏭 Pomalca</option>
+                                <option value="tuman">🌾 Tumán</option>
+                                <option value="sanjose">⛪ San José</option>
+                                <option value="mochumi">🌾 Mochumí</option>
+                                <option value="punto4">📍 Punto 4</option>
+                                <option value="pitipo">🏘️ Pitipo</option>
+                                <option value="tucume">🏛️ Tucume</option>
+                                <option value="illimo">🌾 Illimo</option>
+                                <option value="pacora">🏘️ Pacora</option>
+                                <option value="jayanca">🌾 Jayanca</option>
+                                <option value="sipan">👑 Sipan</option>
+                                <option value="pacherrez">🏘️ Pacherrez</option>
+                                <option value="colliquealto">⛰️ Collique Alto</option>
+                                <option value="zana">🏛️ Zaña</option>
+                            </select>
+                            <i class="fas fa-chevron-down absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 border border-blue-200">
+                        <h3 class="font-bold text-gray-900 mb-4 text-xl flex items-center">
+                            <i class="fas fa-question-circle text-brand-naranja mr-3"></i>¿No encuentras tu ubicación?
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Contáctanos directamente y te ayudamos con tu pedido personalizado
+                        </p>
+                        <a href="https://wa.me/971164073?text=Hola, necesito información sobre entrega de agregados a una ubicación no listada" 
+                           target="_blank"
+                           class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded-xl transition-all duration-300 transform hover:scale-105">
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                            Consultar Ubicación
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-4xl lg:text-5xl text-gray-900 mb-6">
+                    Nuestros <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-naranja to-brand-terracota">Agregados</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Materiales de primera calidad extraídos directamente de nuestras canteras
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productsGrid">
+                
+                <!-- Producto 1: Arena Amarilla -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/arena-amarilla.jpg" 
+                             alt="Arena Amarilla" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                ⭐ Popular
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Arena Amarilla')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Arena Amarilla</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Ideal para concreto y mortero. Granulometría perfecta para construcción.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 21.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('arena-amarilla', 'Arena Amarilla', 21.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="arena-amarilla" data-name="Arena Amarilla" data-price="21.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Piedra Chancada 1/2 -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/chancado12.jpg" 
+                             alt="Piedra Chancada De ½" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-blue-400 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                💎 Premium
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Piedra Chancada De ½')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Piedra Chancada De ½</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Perfecta para concreto estructural. Resistencia y durabilidad garantizada.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 36.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('piedra-chancada-media', 'Piedra Chancada De ½', 36.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="piedra-chancada-media" data-name="Piedra Chancada De ½" data-price="36.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Piedra Chancada 3/4 -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/chancda34.jpeg" 
+                             alt="Piedra Chancada de ¾" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-purple-400 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🏗️ Estructural
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Piedra Chancada de ¾')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Piedra Chancada de ¾</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Ideal para obras de gran envergadura. Máxima resistencia estructural.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 36.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('piedra-chancada-34', 'Piedra Chancada de ¾', 36.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="piedra-chancada-34" data-name="Piedra Chancada de ¾" data-price="36.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Piedra Base Azul -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/piedrabase.jpg" 
+                             alt="Piedra Base Azul Seleccionada" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-cyan-400 to-cyan-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🛣️ Vial
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Piedra Base Azul Seleccionada')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Piedra Base Azul</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Seleccionada para bases de carreteras y pavimentos. Calidad superior.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 20.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('piedra-base', 'Piedra Base Azul Seleccionada', 20.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="piedra-base" data-name="Piedra Base Azul Seleccionada" data-price="20.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Arena Lavada de Río -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/rioarena.jpg" 
+                             alt="Arena Lavada de Río" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-green-400 to-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🌊 Lavada
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Arena Lavada de Rio')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Arena Lavada de Río</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Arena limpia y lavada, libre de impurezas. Perfecta para acabados finos.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 21.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('arena-lavada-rio', 'Arena Lavada de Rio', 21.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="arena-lavada-rio" data-name="Arena Lavada de Rio" data-price="21.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 6: Confitillo -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/confitillohyc.jpeg" 
+                             alt="Confitillo" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-pink-400 to-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🎯 Especial
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Confitillo')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Confitillo</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Agregado fino para concreto especial. Granulometría uniforme y controlada.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 20.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('confitillo', 'Confitillo', 20.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="confitillo" data-name="Confitillo" data-price="20.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 7: Afirmado -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/afirmado.jpeg" 
+                             alt="Afirmado" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-orange-400 to-orange-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                💰 Económico
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Afirmado')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Afirmado</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Material compactable para bases y sub-bases. Excelente relación calidad-precio.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 6.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('afirmado', 'Afirmado', 6.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="afirmado" data-name="Afirmado" data-price="6.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 8: Hormigón -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/hormigon-azul.jpg" 
+                             alt="Hormigón" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-indigo-400 to-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🏗️ Versátil
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Hormigon')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Hormigón</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Mezcla natural de arena y grava. Ideal para concreto ciclópeo y rellenos.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 12.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('hormigon', 'Hormigon', 12.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="hormigon" data-name="Hormigon" data-price="12.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 9: Arena Fina -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/arena-fina.jpg" 
+                             alt="Arena Fina" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-teal-400 to-teal-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                ✨ Fina
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Arena Fina')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Arena Fina</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Arena de granulometría fina. Perfecta para morteros y acabados especiales.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 7.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('arena-fina', 'Arena Fina', 7.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="arena-fina" data-name="Arena Fina" data-price="7.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 10: Roca -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/rocaa.jpg" 
+                             alt="Roca" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-gray-400 to-gray-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🪨 Resistente
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Roca')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Roca</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Material de gran tamaño para obras especiales. Resistencia máxima.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 29.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('roca', 'Roca', 29.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="roca" data-name="Roca" data-price="29.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 11: Piedra Base al barrer -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/rocapequena.jpg" 
+                             alt="Piedra Base al barrer" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-amber-400 to-amber-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🧹 Al Barrer
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Piedra Base al barrer')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Piedra Base al barrer</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Piedra base sin clasificar. Ideal para rellenos y nivelaciones básicas.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 12.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('piedra-base-barrer', 'Piedra Base al barrer', 12.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="piedra-base-barrer" data-name="Piedra Base al barrer" data-price="12.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 12: Polvo de Piedra Chancada -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/polvochancado.webp" 
+                             alt="Polvo de Piedra Chancada" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-slate-400 to-slate-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                💨 Polvo
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Polvo de Piedra Chancada')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Polvo de Piedra Chancada</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Polvo fino de piedra chancada. Perfecto para mezclas especiales y acabados.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 9.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('polvo-piedra-chancada', 'Polvo de Piedra Chancada', 9.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="polvo-piedra-chancada" data-name="Polvo de Piedra Chancada" data-price="9.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 13: Piedra Over Azul Clasificado -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/over.webp" 
+                             alt="Piedra Over Azul Clasificado" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-blue-400 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🔵 Clasificado
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Piedra Over Azul Azul Clasificado')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Piedra Over Azul Clasificado</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Piedra over clasificada de calidad superior. Ideal para obras especializadas.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 12.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('over-clasificado', 'Piedra Over Azul Azul Clasificado', 12.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="over-clasificado" data-name="Piedra Over Azul Azul Clasificado" data-price="12.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 14: Ripio Corriente -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/Ripio.jpg" 
+                             alt="Ripio Corriente" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-amber-400 to-amber-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🏞️ Corriente
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Ripio Corriente')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Ripio Corriente</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Ripio natural de río. Excelente para drenajes y obras hidráulicas.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 14.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('ripio-corriente', 'Ripio Corriente', 14.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="ripio-corriente" data-name="Ripio Corriente" data-price="14.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 15: Piedra Over -->
+                <div class="product-card group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 overflow-hidden border border-orange-100 animate-fade-in">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/agregados/over-zarandeado.jpg" 
+                             alt="Piedra Over" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-emerald-400 to-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                🌿 Natural
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                            <button onclick="consultarWhatsApp('Piedra Over')" 
+                                    class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-poppins font-bold text-xl text-gray-900">Piedra Over</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Piedra over zarandeada. Perfecta para concreto ciclópeo y estructuras.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-2xl font-bold text-brand-naranja product-price">
+                                desde S/ 10.00
+                            </div>
+                            <span class="text-sm text-gray-500">por m³</span>
+                        </div>
+                        <button onclick="addToCart('over-bruto', 'Piedra Over', 10.00)" 
+                                class="w-full bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 add-to-cart-btn"
+                                data-id="over-bruto" data-name="Piedra Over" data-price="10.00">
+                            <i class="fas fa-cart-plus mr-2"></i>Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="addToCartModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300">
+        <div class="bg-white rounded-3xl p-8 max-w-md mx-4 transform scale-95 transition-all duration-300">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-check text-green-500 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">¡Producto añadido!</h3>
+                <p class="text-gray-600 mb-6">El producto se ha agregado correctamente a tu carrito</p>
+                <div class="flex space-x-4">
+                    <button onclick="closeModal()" class="flex-1 bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-xl hover:bg-gray-300 transition-colors duration-300">
+                        Seguir comprando
+                    </button>
+                    <button onclick="goToCart()" class="flex-1 bg-gradient-to-r from-brand-naranja to-brand-terracota text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transition-all duration-300">
+                        Ver carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" 
+            class="fixed bottom-8 right-8 w-16 h-16 bg-gradient-to-r from-brand-naranja to-brand-terracota text-white rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 opacity-0 invisible z-40 animate-pulse-glow">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+<script src="js/include-nav.js"></script>
+    <script src="js/include-footer.js"></script>
+    <script src="js/navbar-control.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Price matrix with all locations and products
+        const priceMatrix = {
+            cantera: {
+                "Arena Amarilla": 21.00,
+                "Piedra Chancada De ½": 36.00,
+                "Piedra Chancada de ¾": 36.00,
+                "Piedra Base Azul Seleccionada": 20.00,
+                "Afirmado": 6.00,
+                "Piedra Over Azul Azul Clasificado": 12.00,
+                "Arena Fina": 7.00,
+                "Arena Lavada de Rio": 21.00,
+                "Confitillo": 20.00,
+                "Ripio Corriente": 14.00,
+                "Roca": 29.00,
+                "Piedra Base al barrer": 12.00,
+                "Polvo de Piedra Chancada": 9.00,
+                "Hormigon": 12.00,
+                "Piedra Over": 10.00
+            },
+            chiclayo: {
+                "Arena Amarilla": 42.00,
+                "Piedra Chancada De ½": 57.00,
+                "Piedra Chancada de ¾": 57.00,
+                "Piedra Base Azul Seleccionada": 41.00,
+                "Afirmado": 27.00,
+                "Piedra Over Azul Azul Clasificado": 33.00,
+                "Arena Fina": 20.00,
+                "Arena Lavada de Rio": 42.00,
+                "Confitillo": 41.00,
+                "Ripio Corriente": 35.00,
+                "Roca": 64.00,
+                "Piedra Base al barrer": 33.00,
+                "Polvo de Piedra Chancada": 30.00,
+                "Hormigon": 33.00,
+                "Piedra Over": 31.00
+            },
+            chongoyape: {
+                "Arena Amarilla": 43.00,
+                "Piedra Chancada De ½": 58.00,
+                "Piedra Chancada de ¾": 58.00,
+                "Piedra Base Azul Seleccionada": 42.00,
+                "Afirmado": 28.00,
+                "Piedra Over Azul Azul Clasificado": 34.00,
+                "Arena Fina": 41.00,
+                "Arena Lavada de Rio": 43.00,
+                "Confitillo": 42.00,
+                "Ripio Corriente": 36.00,
+                "Roca": 64.00,
+                "Piedra Base al barrer": 34.00,
+                "Polvo de Piedra Chancada": 31.00,
+                "Hormigon": 34.00,
+                "Piedra Over": 32.00
+            },
+            patapo: {
+                "Arena Amarilla": 29.00,
+                "Piedra Chancada De ½": 44.00,
+                "Piedra Chancada de ¾": 44.00,
+                "Piedra Base Azul Seleccionada": 28.00,
+                "Afirmado": 14.00,
+                "Piedra Over Azul Azul Clasificado": 20.00,
+                "Arena Fina": 29.00,
+                "Arena Lavada de Rio": 29.00,
+                "Confitillo": 28.00,
+                "Ripio Corriente": 22.00,
+                "Roca": 52.00,
+                "Piedra Base al barrer": 20.00,
+                "Polvo de Piedra Chancada": 17.00,
+                "Hormigon": 20.00,
+                "Piedra Over": 18.00
+            },
+            lambayeque: {
+                "Arena Amarilla": 45.00,
+                "Piedra Chancada De ½": 60.00,
+                "Piedra Chancada de ¾": 60.00,
+                "Piedra Base Azul Seleccionada": 44.00,
+                "Afirmado": 30.00,
+                "Piedra Over Azul Azul Clasificado": 36.00,
+                "Arena Fina": 20.00,
+                "Arena Lavada de Rio": 45.00,
+                "Confitillo": 44.00,
+                "Ripio Corriente": 38.00,
+                "Roca": 64.00,
+                "Piedra Base al barrer": 36.00,
+                "Polvo de Piedra Chancada": 33.00,
+                "Hormigon": 36.00,
+                "Piedra Over": 34.00
+            },
+            pimentel: {
+                "Arena Amarilla": 45.00,
+                "Piedra Chancada De ½": 60.00,
+                "Piedra Chancada de ¾": 60.00,
+                "Piedra Base Azul Seleccionada": 44.00,
+                "Afirmado": 30.00,
+                "Piedra Over Azul Azul Clasificado": 36.00,
+                "Arena Fina": 23.00,
+                "Arena Lavada de Rio": 45.00,
+                "Confitillo": 44.00,
+                "Ripio Corriente": 38.00,
+                "Roca": 69.00,
+                "Piedra Base al barrer": 36.00,
+                "Polvo de Piedra Chancada": 33.00,
+                "Hormigon": 36.00,
+                "Piedra Over": 34.00
+            },
+            santarosa: {
+                "Arena Amarilla": 45.00,
+                "Piedra Chancada De ½": 60.00,
+                "Piedra Chancada de ¾": 60.00,
+                "Piedra Base Azul Seleccionada": 44.00,
+                "Afirmado": 30.00,
+                "Piedra Over Azul Azul Clasificado": 36.00,
+                "Arena Fina": 25.00,
+                "Arena Lavada de Rio": 45.00,
+                "Confitillo": 44.00,
+                "Ripio Corriente": 38.00,
+                "Roca": 69.00,
+                "Piedra Base al barrer": 36.00,
+                "Polvo de Piedra Chancada": 33.00,
+                "Hormigon": 36.00,
+                "Piedra Over": 34.00
+            },
+            monsefu: {
+                "Arena Amarilla": 43.00,
+                "Piedra Chancada De ½": 58.00,
+                "Piedra Chancada de ¾": 58.00,
+                "Piedra Base Azul Seleccionada": 42.00,
+                "Afirmado": 28.00,
+                "Piedra Over Azul Azul Clasificado": 34.00,
+                "Arena Fina": 26.00,
+                "Arena Lavada de Rio": 43.00,
+                "Confitillo": 42.00,
+                "Ripio Corriente": 36.00,
+                "Roca": 64.00,
+                "Piedra Base al barrer": 34.00,
+                "Polvo de Piedra Chancada": 31.00,
+                "Hormigon": 34.00,
+                "Piedra Over": 32.00
+            },
+            morrope: {
+                "Arena Amarilla": 52.00,
+                "Piedra Chancada De ½": 67.00,
+                "Piedra Chancada de ¾": 67.00,
+                "Piedra Base Azul Seleccionada": 51.00,
+                "Afirmado": 37.00,
+                "Piedra Over Azul Azul Clasificado": 43.00,
+                "Arena Fina": 46.00,
+                "Arena Lavada de Rio": 52.00,
+                "Confitillo": 51.00,
+                "Ripio Corriente": 45.00,
+                "Roca": 74.00,
+                "Piedra Base al barrer": 43.00,
+                "Polvo de Piedra Chancada": 40.00,
+                "Hormigon": 43.00,
+                "Piedra Over": 41.00
+            },
+            ferrenafe: {
+                "Arena Amarilla": 42.00,
+                "Piedra Chancada De ½": 57.00,
+                "Piedra Chancada de ¾": 57.00,
+                "Piedra Base Azul Seleccionada": 41.00,
+                "Afirmado": 27.00,
+                "Piedra Over Azul Azul Clasificado": 33.00,
+                "Arena Fina": 27.00,
+                "Arena Lavada de Rio": 42.00,
+                "Confitillo": 41.00,
+                "Ripio Corriente": 35.00,
+                "Roca": 67.00,
+                "Piedra Base al barrer": 33.00,
+                "Polvo de Piedra Chancada": 30.00,
+                "Hormigon": 33.00,
+                "Piedra Over": 31.00
+            },
+            picsi: {
+                "Arena Amarilla": 40.00,
+                "Piedra Chancada De ½": 55.00,
+                "Piedra Chancada de ¾": 55.00,
+                "Piedra Base Azul Seleccionada": 39.00,
+                "Afirmado": 25.00,
+                "Piedra Over Azul Azul Clasificado": 31.00,
+                "Arena Fina": 25.00,
+                "Arena Lavada de Rio": 40.00,
+                "Confitillo": 39.00,
+                "Ripio Corriente": 33.00,
+                "Roca": 64.00,
+                "Piedra Base al barrer": 31.00,
+                "Polvo de Piedra Chancada": 28.00,
+                "Hormigon": 31.00,
+                "Piedra Over": 29.00
+            },
+            tranca: {
+                "Arena Amarilla": 59.00,
+                "Piedra Chancada De ½": 74.00,
+                "Piedra Chancada de ¾": 74.00,
+                "Piedra Base Azul Seleccionada": 58.00,
+                "Afirmado": 44.00,
+                "Piedra Over Azul Azul Clasificado": 50.00,
+                "Arena Fina": 24.00,
+                "Arena Lavada de Rio": 59.00,
+                "Confitillo": 58.00,
+                "Ripio Corriente": 52.00,
+                "Roca": 74.00,
+                "Piedra Base al barrer": 50.00,
+                "Polvo de Piedra Chancada": 47.00,
+                "Hormigon": 50.00,
+                "Piedra Over": 48.00
+            },
+            eten: {
+                "Arena Amarilla": 46.00,
+                "Piedra Chancada De ½": 61.00,
+                "Piedra Chancada de ¾": 61.00,
+                "Piedra Base Azul Seleccionada": 45.00,
+                "Afirmado": 31.00,
+                "Piedra Over Azul Azul Clasificado": 37.00,
+                "Arena Fina": 33.00,
+                "Arena Lavada de Rio": 46.00,
+                "Confitillo": 45.00,
+                "Ripio Corriente": 39.00,
+                "Roca": 67.00,
+                "Piedra Base al barrer": 37.00,
+                "Polvo de Piedra Chancada": 34.00,
+                "Hormigon": 37.00,
+                "Piedra Over": 35.00
+            },
+            puertoeten: {
+                "Arena Amarilla": 48.00,
+                "Piedra Chancada De ½": 63.00,
+                "Piedra Chancada de ¾": 63.00,
+                "Piedra Base Azul Seleccionada": 47.00,
+                "Afirmado": 33.00,
+                "Piedra Over Azul Azul Clasificado": 39.00,
+                "Arena Fina": 45.00,
+                "Arena Lavada de Rio": 48.00,
+                "Confitillo": 47.00,
+                "Ripio Corriente": 41.00,
+                "Roca": 67.00,
+                "Piedra Base al barrer": 39.00,
+                "Polvo de Piedra Chancada": 36.00,
+                "Hormigon": 39.00,
+                "Piedra Over": 37.00
+            },
+            reque: {
+                "Arena Amarilla": 43.00,
+                "Piedra Chancada De ½": 58.00,
+                "Piedra Chancada de ¾": 58.00,
+                "Piedra Base Azul Seleccionada": 42.00,
+                "Afirmado": 28.00,
+                "Piedra Over Azul Azul Clasificado": 34.00,
+                "Arena Fina": 29.00,
+                "Arena Lavada de Rio": 43.00,
+                "Confitillo": 42.00,
+                "Ripio Corriente": 36.00,
+                "Roca": 64.00,
+                "Piedra Base al barrer": 34.00,
+                "Polvo de Piedra Chancada": 31.00,
+                "Hormigon": 34.00,
+                "Piedra Over": 32.00
+            },
+            montegrandereque: {
+                "Arena Amarilla": 21.00,
+                "Piedra Chancada De ½": 36.00,
+                "Piedra Chancada de ¾": 36.00,
+                "Piedra Base Azul Seleccionada": 20.00,
+                "Afirmado": 6.00,
+                "Piedra Over Azul Azul Clasificado": 12.00,
+                "Arena Fina": 7.00,
+                "Arena Lavada de Rio": 21.00,
+                "Confitillo": 20.00,
+                "Ripio Corriente": 14.00,
+                "Roca": 29.00,
+                "Piedra Base al barrer": 12.00,
+                "Polvo de Piedra Chancada": 9.00,
+                "Hormigon": 12.00,
+                "Piedra Over": 10.00
+            },
+            pomalca: {
+                "Arena Amarilla": 41.00,
+                "Piedra Chancada De ½": 56.00,
+                "Piedra Chancada de ¾": 56.00,
+                "Piedra Base Azul Seleccionada": 40.00,
+                "Afirmado": 26.00,
+                "Piedra Over Azul Azul Clasificado": 32.00,
+                "Arena Fina": 28.00,
+                "Arena Lavada de Rio": 41.00,
+                "Confitillo": 40.00,
+                "Ripio Corriente": 34.00,
+                "Roca": 59.00,
+                "Piedra Base al barrer": 32.00,
+                "Polvo de Piedra Chancada": 29.00,
+                "Hormigon": 32.00,
+                "Piedra Over": 30.00
+            },
+            tuman: {
+                "Arena Amarilla": 33.00,
+                "Piedra Chancada De ½": 48.00,
+                "Piedra Chancada de ¾": 48.00,
+                "Piedra Base Azul Seleccionada": 32.00,
+                "Afirmado": 18.00,
+                "Piedra Over Azul Azul Clasificado": 24.00,
+                "Arena Fina": 29.00,
+                "Arena Lavada de Rio": 33.00,
+                "Confitillo": 32.00,
+                "Ripio Corriente": 26.00,
+                "Roca": 54.00,
+                "Piedra Base al barrer": 24.00,
+                "Polvo de Piedra Chancada": 21.00,
+                "Hormigon": 24.00,
+                "Piedra Over": 22.00
+            },
+            sanjose: {
+                "Arena Amarilla": 45.00,
+                "Piedra Chancada De ½": 60.00,
+                "Piedra Chancada de ¾": 60.00,
+                "Piedra Base Azul Seleccionada": 44.00,
+                "Afirmado": 30.00,
+                "Piedra Over Azul Azul Clasificado": 36.00,
+                "Arena Fina": 23.00,
+                "Arena Lavada de Rio": 45.00,
+                "Confitillo": 44.00,
+                "Ripio Corriente": 38.00,
+                "Roca": 64.00,
+                "Piedra Base al barrer": 36.00,
+                "Polvo de Piedra Chancada": 33.00,
+                "Hormigon": 36.00,
+                "Piedra Over": 34.00
+            },
+            mochumi: {
+                "Arena Amarilla": 51.00,
+                "Piedra Chancada De ½": 66.00,
+                "Piedra Chancada de ¾": 66.00,
+                "Piedra Base Azul Seleccionada": 50.00,
+                "Afirmado": 36.00,
+                "Piedra Over Azul Azul Clasificado": 42.00,
+                "Arena Fina": 39.00,
+                "Arena Lavada de Rio": 51.00,
+                "Confitillo": 50.00,
+                "Ripio Corriente": 44.00,
+                "Roca": 69.00,
+                "Piedra Base al barrer": 42.00,
+                "Polvo de Piedra Chancada": 39.00,
+                "Hormigon": 42.00,
+                "Piedra Over": 40.00
+            },
+            punto4: {
+                "Arena Amarilla": 48.00,
+                "Piedra Chancada De ½": 63.00,
+                "Piedra Chancada de ¾": 63.00,
+                "Piedra Base Azul Seleccionada": 47.00,
+                "Afirmado": 33.00,
+                "Piedra Over Azul Azul Clasificado": 39.00,
+                "Arena Fina": 39.00,
+                "Arena Lavada de Rio": 48.00,
+                "Confitillo": 47.00,
+                "Ripio Corriente": 41.00,
+                "Roca": 69.00,
+                "Piedra Base al barrer": 39.00,
+                "Polvo de Piedra Chancada": 36.00,
+                "Hormigon": 39.00,
+                "Piedra Over": 37.00
+            },
+            pitipo: {
+                "Arena Amarilla": 51.00,
+                "Piedra Chancada De ½": 66.00,
+                "Piedra Chancada de ¾": 66.00,
+                "Piedra Base Azul Seleccionada": 50.00,
+                "Afirmado": 36.00,
+                "Piedra Over Azul Azul Clasificado": 42.00,
+                "Arena Fina": 39.00,
+                "Arena Lavada de Rio": 51.00,
+                "Confitillo": 50.00,
+                "Ripio Corriente": 44.00,
+                "Roca": 69.00,
+                "Piedra Base al barrer": 42.00,
+                "Polvo de Piedra Chancada": 39.00,
+                "Hormigon": 42.00,
+                "Piedra Over": 40.00
+            },
+            tucume: {
+                "Arena Amarilla": 54.00,
+                "Piedra Chancada De ½": 69.00,
+                "Piedra Chancada de ¾": 69.00,
+                "Piedra Base Azul Seleccionada": 53.00,
+                "Afirmado": 39.00,
+                "Piedra Over Azul Azul Clasificado": 45.00,
+                "Arena Fina": 41.00,
+                "Arena Lavada de Rio": 54.00,
+                "Confitillo": 53.00,
+                "Ripio Corriente": 47.00,
+                "Roca": 72.00,
+                "Piedra Base al barrer": 45.00,
+                "Polvo de Piedra Chancada": 42.00,
+                "Hormigon": 45.00,
+                "Piedra Over": 43.00
+            },
+            illimo: {
+                "Arena Amarilla": 56.00,
+                "Piedra Chancada De ½": 71.00,
+                "Piedra Chancada de ¾": 71.00,
+                "Piedra Base Azul Seleccionada": 55.00,
+                "Afirmado": 41.00,
+                "Piedra Over Azul Azul Clasificado": 47.00,
+                "Arena Fina": 43.00,
+                "Arena Lavada de Rio": 56.00,
+                "Confitillo": 55.00,
+                "Ripio Corriente": 49.00,
+                "Roca": 74.00,
+                "Piedra Base al barrer": 47.00,
+                "Polvo de Piedra Chancada": 44.00,
+                "Hormigon": 47.00,
+                "Piedra Over": 45.00
+            },
+            pacora: {
+                "Arena Amarilla": 59.00,
+                "Piedra Chancada De ½": 74.00,
+                "Piedra Chancada de ¾": 74.00,
+                "Piedra Base Azul Seleccionada": 58.00,
+                "Afirmado": 44.00,
+                "Piedra Over Azul Azul Clasificado": 50.00,
+                "Arena Fina": 45.00,
+                "Arena Lavada de Rio": 59.00,
+                "Confitillo": 58.00,
+                "Ripio Corriente": 52.00,
+                "Roca": 74.00,
+                "Piedra Base al barrer": 50.00,
+                "Polvo de Piedra Chancada": 47.00,
+                "Hormigon": 50.00,
+                "Piedra Over": 48.00
+            },
+            jayanca: {
+                "Arena Amarilla": 62.00,
+                "Piedra Chancada De ½": 77.00,
+                "Piedra Chancada de ¾": 77.00,
+                "Piedra Base Azul Seleccionada": 61.00,
+                "Afirmado": 47.00,
+                "Piedra Over Azul Azul Clasificado": 53.00,
+                "Arena Fina": 47.00,
+                "Arena Lavada de Rio": 62.00,
+                "Confitillo": 61.00,
+                "Ripio Corriente": 55.00,
+                "Roca": 79.00,
+                "Piedra Base al barrer": 53.00,
+                "Polvo de Piedra Chancada": 50.00,
+                "Hormigon": 53.00,
+                "Piedra Over": 51.00
+            },
+            sipan: {
+                "Arena Amarilla": 43.00,
+                "Piedra Chancada De ½": 58.00,
+                "Piedra Chancada de ¾": 58.00,
+                "Piedra Base Azul Seleccionada": 42.00,
+                "Afirmado": 28.00,
+                "Piedra Over Azul Azul Clasificado": 34.00,
+                "Arena Fina": 19.00,
+                "Arena Lavada de Rio": 43.00,
+                "Confitillo": 42.00,
+                "Ripio Corriente": 36.00,
+                "Roca": 59.00,
+                "Piedra Base al barrer": 34.00,
+                "Polvo de Piedra Chancada": 31.00,
+                "Hormigon": 34.00,
+                "Piedra Over": 33.00
+            },
+            pacherrez: {
+                "Arena Amarilla": 44.00,
+                "Piedra Chancada De ½": 59.00,
+                "Piedra Chancada de ¾": 59.00,
+                "Piedra Base Azul Seleccionada": 43.00,
+                "Afirmado": 29.00,
+                "Piedra Over Azul Azul Clasificado": 35.00,
+                "Arena Fina": 19.00,
+                "Arena Lavada de Rio": 44.00,
+                "Confitillo": 43.00,
+                "Ripio Corriente": 37.00,
+                "Roca": 54.00,
+                "Piedra Base al barrer": 35.00,
+                "Polvo de Piedra Chancada": 32.00,
+                "Hormigon": 35.00,
+                "Piedra Over": 33.00
+            },
+            colliquealto: {
+                "Arena Amarilla": 45.00,
+                "Piedra Chancada De ½": 60.00,
+                "Piedra Chancada de ¾": 60.00,
+                "Piedra Base Azul Seleccionada": 44.00,
+                "Afirmado": 30.00,
+                "Piedra Over Azul Azul Clasificado": 36.00,
+                "Arena Fina": 19.00,
+                "Arena Lavada de Rio": 45.00,
+                "Confitillo": 44.00,
+                "Ripio Corriente": 38.00,
+                "Roca": 69.00,
+                "Piedra Base al barrer": 36.00,
+                "Polvo de Piedra Chancada": 33.00,
+                "Hormigon": 36.00,
+                "Piedra Over": 34.00
+            },
+            zana: {
+                "Arena Amarilla": 49.00,
+                "Piedra Chancada De ½": 64.00,
+                "Piedra Chancada de ¾": 64.00,
+                "Piedra Base Azul Seleccionada": 48.00,
+                "Afirmado": 34.00,
+                "Piedra Over Azul Azul Clasificado": 40.00,
+                "Arena Fina": 40.00,
+                "Arena Lavada de Rio": 49.00,
+                "Confitillo": 48.00,
+                "Ripio Corriente": 42.00,
+                "Roca": 69.00,
+                "Piedra Base al barrer": 40.00,
+                "Polvo de Piedra Chancada": 37.00,
+                "Hormigon": 40.00,
+                "Piedra Over": 38.00
+            }
+        };
+
+        // Global variables
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let currentDestination = 'cantera';
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            setupEventListeners();
+            showWelcomeNotification();
+        });
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    if (mobileMenu.style.transform === 'translateY(0px)') {
+                        mobileMenu.style.transform = 'translateY(-100%)';
+                        mobileMenu.style.opacity = '0';
+                    } else {
+                        mobileMenu.style.transform = 'translateY(0px)';
+                        mobileMenu.style.opacity = '1';
+                    }
+                });
+            }
+
+            // Destination selector
+            const destinoSelect = document.getElementById('destinoSelect');
+            if (destinoSelect) {
+                destinoSelect.addEventListener('change', updatePrices);
+            }
+            
+            // Back to top button
+            window.addEventListener('scroll', handleScroll);
+            const backToTopBtn = document.getElementById('backToTop');
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener('click', scrollToTop);
+            }
+        }
+
+        // Update prices based on destination
+        function updatePrices() {
+            console.log('🔄 Actualizando precios...');
+            
+            const destinationSelect = document.getElementById('destinoSelect');
+            if (!destinationSelect) {
+                console.error('❌ Selector de destino no encontrado');
+                return;
+            }
+            
+            const destination = destinationSelect.value;
+            currentDestination = destination;
+            
+            console.log(`📍 Destino: ${destination}`);
+            
+            // Verificar si existe la matriz de precios para este destino
+            if (!priceMatrix[destination]) {
+                console.error(`❌ No hay precios para: ${destination}`);
+                showNotification('No hay precios disponibles para este destino', 'error');
+                return;
+            }
+            
+            const productCards = document.querySelectorAll('.product-card');
+            let updatedCount = 0;
+            
+            console.log(`🔍 Procesando ${productCards.length} productos...`);
+            
+            productCards.forEach((card, index) => {
+                const productNameElement = card.querySelector('h3');
+                const priceElement = card.querySelector('.product-price');
+                const addButton = card.querySelector('.add-to-cart-btn');
+                
+                if (!productNameElement || !priceElement || !addButton) {
+                    console.warn(`⚠️ Elementos faltantes en tarjeta ${index + 1}`);
+                    return;
+                }
+                
+                let productName = productNameElement.textContent.trim();
+                
+                // MAPEO DE NOMBRES PROBLEMÁTICOS
+                const nameMapping = {
+                    'Piedra Base Azul': 'Piedra Base Azul Seleccionada',
+                    'Arena Lavada de Río': 'Arena Lavada de Rio',
+                    'Hormigón': 'Hormigon',
+                    'Piedra Over Azul Clasificado': 'Piedra Over Azul Azul Clasificado'
+                };
+                
+                // Aplicar mapeo si existe
+                if (nameMapping[productName]) {
+                    console.log(`🔄 Mapeo: "${productName}" -> "${nameMapping[productName]}"`);
+                    productName = nameMapping[productName];
+                }
+                
+                // Buscar precio en la matriz
+                const price = priceMatrix[destination][productName];
+                
+                if (price !== undefined) {
+                    // Actualizar precio en la interfaz
+                    priceElement.textContent = `desde S/ ${price.toFixed(2)}`;
+                    
+                    // Actualizar atributo data-price del botón
+                    addButton.setAttribute('data-price', price.toString());
+                    
+                    updatedCount++;
+                    console.log(`✅ ${productName}: S/ ${price}`);
+                } else {
+                    // Producto no encontrado
+                    priceElement.textContent = 'Precio no disponible';
+                    addButton.setAttribute('data-price', '0');
+                    console.warn(`❌ No encontrado: "${productName}"`);
+                }
+            });
+            
+            console.log(`📊 ${updatedCount}/${productCards.length} precios actualizados`);
+            
+            if (updatedCount > 0) {
+                showNotification(`Precios actualizados para ${getDestinationName(destination)}`, 'success');
+            } else {
+                showNotification('No se pudieron actualizar los precios', 'warning');
+            }
+        }
+
+        // Get destination display name
+        function getDestinationName(destination) {
+            const select = document.getElementById('destinoSelect');
+            const option = select?.querySelector(`option[value="${destination}"]`);
+            return option ? option.textContent : destination;
+        }
+
+        // Add to cart function
+        function addToCart(productId, productName, basePrice) {
+            console.log(`🛒 Agregando: ${productName}`);
+            
+            const productButton = document.querySelector(`[data-id="${productId}"]`);
+            
+            if (!productButton) {
+                console.error(`❌ Botón no encontrado: ${productId}`);
+                showNotification('Error: Producto no encontrado', 'error');
+                return;
+            }
+            
+            const currentPriceStr = productButton.getAttribute('data-price');
+            const currentPrice = parseFloat(currentPriceStr);
+            
+            if (isNaN(currentPrice) || currentPrice <= 0) {
+                console.error(`❌ Precio inválido: ${currentPriceStr}`);
+                showNotification('Selecciona un destino primero para ver el precio', 'warning');
+                return;
+            }
+            
+            const existingProduct = cart.find(item => item.id === productId);
+            
+            if (existingProduct) {
+                existingProduct.quantity += 1;
+                existingProduct.price = currentPrice;
+                console.log(`📦 Cantidad actualizada: ${existingProduct.quantity}`);
+            } else {
+                cart.push({
+                    id: productId,
+                    name: productName,
+                    price: currentPrice,
+                    quantity: 1,
+                    destination: currentDestination
+                });
+                console.log(`📦 Producto agregado`);
+            }
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            
+            console.log(`✅ ${productName} - S/ ${currentPrice}`);
+            
+            // Show modal
+            showModal();
+        }
+
+        // Update cart count
+        function updateCartCount() {
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            const cartCountElement = document.getElementById('cart-count');
+            const mobileCartCountElement = document.getElementById('mobile-cart-count');
+            
+            if (cartCountElement) {
+                cartCountElement.textContent = count;
+            }
+            if (mobileCartCountElement) {
+                mobileCartCountElement.textContent = count;
+            }
+        }
+
+        // Show modal
+        function showModal() {
+            const modal = document.getElementById('addToCartModal');
+            if (modal) {
+                modal.style.opacity = '1';
+                modal.style.visibility = 'visible';
+                modal.querySelector('.bg-white').style.transform = 'scale(1)';
+            }
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('addToCartModal');
+            if (modal) {
+                modal.style.opacity = '0';
+                modal.style.visibility = 'hidden';
+                modal.querySelector('.bg-white').style.transform = 'scale(0.95)';
+            }
+        }
+
+        // Go to cart
+        function goToCart() {
+            // Redirect to cart page or show cart
+            window.location.href = 'cotizacion.html';
+        }
+
+        // WhatsApp consultation functions
+        function consultarWhatsApp(productName) {
+            const destination = getDestinationName(currentDestination);
+            const price = priceMatrix[currentDestination] && priceMatrix[currentDestination][productName] 
+                ? priceMatrix[currentDestination][productName] 
+                : 'Consultar';
+            
+            const mensaje = `🏗️ *Consulta de Agregado - H&C FerroMateriales*
+
+📦 *Producto:* ${productName}
+📍 *Destino:* ${destination}
+💰 *Precio referencial:* S/ ${price}
+📏 *Pedido mínimo:* 10 m³
+
+¡Hola! Me interesa este agregado. ¿Podrían proporcionarme información sobre:
+
+✅ Disponibilidad inmediata
+✅ Precio final por volumen
+✅ Tiempo de entrega
+✅ Calidad y certificaciones
+✅ Condiciones de pago
+
+¡Gracias por su atención!`;
+
+            const url = `https://wa.me/971164073?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        // Show notification
+        function showNotification(message, type = 'info') {
+            console.log(`[${type.toUpperCase()}] ${message}`);
+            
+            // Crear notificación visual si no existe contenedor
+            let container = document.getElementById('notifications-container');
+            if (!container) {
+                container = document.createElement('div');
+                container.id = 'notifications-container';
+                container.className = 'fixed top-4 right-4 z-50 space-y-2';
+                document.body.appendChild(container);
+            }
+            
+            const notification = document.createElement('div');
+            const bgColor = type === 'success' ? 'from-green-500 to-green-600' : 
+                           type === 'warning' ? 'from-yellow-500 to-yellow-600' : 
+                           type === 'error' ? 'from-red-500 to-red-600' :
+                           'from-blue-500 to-blue-600';
+            const icon = type === 'success' ? 'fa-check-circle' : 
+                        type === 'warning' ? 'fa-exclamation-triangle' : 
+                        type === 'error' ? 'fa-times-circle' :
+                        'fa-info-circle';
+            
+            notification.className = `bg-gradient-to-r ${bgColor} text-white px-6 py-4 rounded-2xl shadow-2xl z-50 animate-slide-up max-w-sm mb-2`;
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <i class="fas ${icon} mr-3 text-xl"></i>
+                    <div>
+                        <p class="font-bold">${type === 'success' ? '¡Éxito!' : 
+                                              type === 'warning' ? '¡Atención!' : 
+                                              type === 'error' ? '¡Error!' : 
+                                              'Información'}</p>
+                        <p class="text-sm opacity-90">${message}</p>
+                    </div>
+                </div>
+            `;
+            
+            container.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(400px)';
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    if (container.contains(notification)) {
+                        container.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // Show welcome notification
+        function showWelcomeNotification() {
+            setTimeout(() => {
+                showNotification('¡Bienvenido! Selecciona tu ubicación para ver precios actualizados', 'info');
+            }, 1000);
+        }
+
+        // Handle scroll for back to top button
+        function handleScroll() {
+            const backToTop = document.getElementById('backToTop');
+            if (backToTop) {
+                if (window.pageYOffset > 300) {
+                    backToTop.style.opacity = '1';
+                    backToTop.style.visibility = 'visible';
+                } else {
+                    backToTop.style.opacity = '0';
+                    backToTop.style.visibility = 'hidden';
+                }
+            }
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('addToCartModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        console.log('🏗️ H&C FerroMateriales - Sistema Cargado ✅');
+    </script>
+</body>
+</html>

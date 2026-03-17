@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="H&C FerroMateriales S.R.L: Líder en agregados como arena y piedra chancada en Chiclayo. Calidad garantizada.">
+    <meta name="keywords" content="Ferretería, Materiales de Construcción, Pomalca, Cemento, Piedra Chancada, Volquetes, Tractores">
+    <meta name="author" content="H&C FerroMateriales S.R.L">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="H&C FerroMateriales S.R.L - Materiales de Construcción y Equipos">
+    <meta property="og:description" content="Tu ferretería confiable en Pomalca, con los mejores agregados y maquinaria para construcción.">
+    <meta property="og:image" content="img/trabajador.jpeg">
+    <meta property="og:url" content="https://hycferromateriales.com">
+    <meta property="og:type" content="website">
+    <title>H&C FerroMateriales S.R.L - Materiales de Construcción y Equipos</title>
+    <link rel="icon" href="./img/logoferreteria.ico" type="image/x-icon">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HardwareStore",
+      "name": "H&C FerroMateriales S.R.L",
+      "image": "img/trabajador.jpeg",
+      "description": "Ferretería confiable en Pomalca, ofrecemos materiales de construcción y maquinaria. Ubicación: H&C FerroMateriales S.R.L, PE-6A 3668, Pomalca 14006. Calle San Francisco Mz E Lote 5. Referencia: antes del grifo Pecsa.",
+      "telephone": "+51 971164073",
+      "url": "https://hycferromateriales.com"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#b22222',
+                        'brand-orange': '#ff8c00',
+                        'brand-peru': '#cd853f',
+                        'brand-gold': '#ffd700'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom animations */
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        @keyframes moveTruck {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes sparkle {
+            0%, 100% {
+                filter: brightness(100%);
+                transform: rotate(0deg);
+            }
+            50% {
+                filter: brightness(150%);
+                transform: rotate(10deg);
+            }
+        }
+        
+        .animate-marquee { animation: marquee 15s linear infinite; }
+        .animate-truck-move { animation: moveTruck 2s infinite; }
+        .animate-bounce-custom { animation: bounce 2s infinite; }
+        .animate-sparkle { animation: sparkle 2s infinite; }
+        
+        /* Glass morphism effects */
+        .glass-bg {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .glass-hover:hover {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+        }
+        
+        /* Gradient backgrounds */
+        .gradient-main {
+            background: linear-gradient(135deg, #b22222 0%, #ff8c00 50%, #cd853f 100%);
+        }
+        
+        .gradient-hover:hover {
+            background: linear-gradient(135deg, #cd853f 0%, #ff8c00 50%, #b22222 100%);
+        }
+        
+        /* Custom scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Elegant header styling */
+        .elegant-header {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            position: relative;
+        }
+        
+        .elegant-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #b22222 0%, #ff8c00 50%, #cd853f 100%);
+            opacity: 0.8;
+        }
+        
+        /* Navigation improvements */
+        .nav-item-modern {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-item-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .nav-item-modern:hover::before {
+            left: 100%;
+        }
+        
+        /* Mobile sidebar improvements */
+        .mobile-sidebar {
+            background: linear-gradient(135deg, #b22222 0%, #ff8c00 50%, #cd853f 100%);
+            width: 20rem;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .mobile-menu-item {
+            position: relative;
+        }
+        
+        .mobile-menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #fff3cd, #ffd700);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu-item:hover::before {
+            transform: scaleY(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-inter">
+    <!-- Elegant Header -->
+    <header class="elegant-header">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+                <!-- Contact Info -->
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center text-gray-600 hover:text-brand-red transition-all duration-300 hover:-translate-y-0.5 px-2 py-1 rounded-lg hover:bg-red-50">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                        <span class="text-sm font-medium">Pomalca, Chiclayo, Lambayeque</span>
+                    </div>
+                </div>
+                
+                <!-- Elegant Marquee -->
+                <div class="flex-1 lg:max-w-2xl">
+                    <div class="overflow-hidden py-2">
+                        <div class="animate-marquee whitespace-nowrap text-black font-bold text-sm tracking-wide">
+                            ✨ Agregados directo de cantera a tu obra: arena, piedra chancada, afirmado y más • Calidad garantizada • Entrega rápida ✨
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition-all duration-300 hover:-translate-y-1 px-3 py-2 rounded-lg hover:bg-blue-50 hover:shadow-md">
+                        <i class="fab fa-facebook-f mr-2"></i>
+                        <span class="hidden sm:inline text-sm font-medium">Facebook</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@chiclayojh" target="_blank" class="flex items-center text-gray-600 hover:text-black transition-all duration-300 hover:-translate-y-1 px-3 py-2 rounded-lg hover:bg-gray-100 hover:shadow-md">
+                        <i class="fab fa-tiktok mr-2"></i>
+                        <span class="hidden sm:inline text-sm font-medium">TikTok</span>
+                    </a>
+                    <a href="tel:+51971164073" class="flex items-center text-gray-600 hover:text-green-600 transition-all duration-300 hover:-translate-y-1 px-3 py-2 rounded-lg hover:bg-green-50 hover:shadow-md">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        <span class="text-sm font-medium">971 164 073</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="gradient-main sticky top-0 z-30 relative">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+                    <a href="index.html" class="block">
+                        <img src="img/Logo-mejorado-removebg-preview.png" 
+                             alt="HC Ferromateriales" 
+                             class="h-12 md:h-16 lg:h-18 w-auto max-w-48 filter drop-shadow-lg">
+                    </a>
+                </div>
+                
+                <!-- Mobile Controls -->
+                <div class="lg:hidden flex items-center gap-3">
+                    <!-- Mobile Cart -->
+                    <div class="glass-bg glass-hover rounded-xl p-3 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                        <a href="cotizacion.html" class="block relative">
+                            <i class="fas fa-shopping-cart text-white text-lg"></i>
+                            <span class="absolute -top-2 -right-2 bg-gradient-to-r from-orange-400 to-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white animate-pulse" id="cart-count-mobile">0</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Hamburger Button -->
+                    <button class="glass-bg glass-hover rounded-lg p-2 transition-all duration-300 hover:scale-105" onclick="toggleMenu()">
+                        <div class="w-6 h-6 flex flex-col justify-center items-center">
+                            <div class="w-5 h-0.5 bg-white rounded transition-all duration-300 mb-1"></div>
+                            <div class="w-5 h-0.5 bg-white rounded transition-all duration-300 mb-1"></div>
+                            <div class="w-5 h-0.5 bg-white rounded transition-all duration-300"></div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="acerca.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span>Acerca</span>
+                    </a>
+                    <a href="productos.php" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-box mr-2"></i>
+                        <span>Productos</span>
+                    </a>
+                    <a href="agregados.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-cubes mr-2"></i>
+                        <span>Agregados</span>
+                    </a>
+                    <a href="ladrillos.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-tools mr-2"></i>
+                        <span>Ladrillos</span>
+                    </a>
+                    <a href="maquinaria.html" class="nav-item-modern glass-bg glass-hover text-white font-semibold text-sm uppercase tracking-wide px-4 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:text-yellow-200">
+                        <i class="fas fa-cogs mr-2"></i>
+                        <span>Maquinaria</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Cart -->
+                <div class="hidden lg:block">
+                    <div class="glass-bg glass-hover rounded-xl p-3 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                        <a href="cotizacion.html" class="block relative">
+                            <i class="fas fa-shopping-cart text-white text-xl"></i>
+                            <span class="absolute -top-2 -right-2 bg-gradient-to-r from-orange-400 to-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white animate-pulse" id="cart-count-desktop">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div id="sidebar" class="mobile-sidebar fixed top-0 left-0 h-full overflow-y-auto transform -translate-x-full transition-transform duration-500 ease-out z-50">
+        <!-- Sidebar Header -->
+        <div class="bg-black bg-opacity-20 border-b border-white border-opacity-10 p-6 relative">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-bars text-white text-lg mr-3"></i>
+                    <h2 class="text-white text-lg font-bold font-poppins">Menú Principal</h2>
+                </div>
+                <button class="text-white text-xl hover:text-yellow-200 transition-colors duration-300" onclick="toggleMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-white via-50% to-transparent opacity-30"></div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="py-4">
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="index.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-home mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Inicio</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="acerca.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-info-circle mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Acerca de Nosotros</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="productos.php" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-box mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Productos</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="agregados.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-cubes mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Agregados</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="ladrillos.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-tools mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Ladrillos</span>
+                </a>
+            </div>
+            <div class="mobile-menu-item mx-3 mb-1 rounded-xl hover:bg-white hover:bg-opacity-10 hover:translate-x-2 transition-all duration-300">
+                <a href="maquinaria.html" class="flex items-center px-4 py-4 text-white font-medium">
+                    <i class="fas fa-cogs mr-4 w-5 text-center transition-all duration-300"></i>
+                    <span>Maquinaria y Proyectos</span>
+                </a>
+            </div>
+            
+            <!-- Separator -->
+            <div class="my-6 mx-6 h-px bg-gradient-to-r from-transparent via-white via-50% to-transparent opacity-20"></div>
+            
+            <!-- Quick Contact -->
+            <div class="px-6 py-2">
+                <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider opacity-80">Contacto Directo</h3>
+                <div class="space-y-3">
+                    <a href="tel:+51971164073" class="flex items-center text-white hover:text-green-300 transition-colors duration-300 p-2 rounded-lg hover:bg-white hover:bg-opacity-10">
+                        <i class="fab fa-whatsapp mr-3 text-green-400 text-lg"></i>
+                        <div>
+                            <div class="font-medium">WhatsApp</div>
+                            <div class="text-sm opacity-80">971 164 073</div>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/" target="_blank" class="flex items-center text-white hover:text-blue-300 transition-colors duration-300 p-2 rounded-lg hover:bg-white hover:bg-opacity-10">
+                        <i class="fab fa-facebook-f mr-3 text-blue-400 text-lg"></i>
+                        <div>
+                            <div class="font-medium">Facebook</div>
+                            <div class="text-sm opacity-80">HC Ferromateriales</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm hidden z-40 transition-all duration-300" onclick="toggleMenu()"></div>
+
+    <!-- Carousel Section -->
+    <section class="relative">
+        <div id="carousel" class="relative overflow-hidden w-full h-72 sm:h-96 md:h-[480px] lg:h-[500px] mb-32 md:mb-40">
+            <div class="carousel-inner flex transition-transform duration-700 ease-in-out h-full">
+                <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                    <img src="./imagenesotraseccion/37.webp" alt="Proveedor Directo" class="w-full h-full object-cover brightness-80 transition-all duration-1000 hover:brightness-100 hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4">
+                            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold uppercase tracking-wider mb-6 animate__animated animate__fadeIn animate__delay-1s drop-shadow-lg font-poppins">Agregados Directo de Proveedor</h2>
+                            <button onclick="window.location.href='cotizacion.html';" class="bg-brand-red hover:bg-brand-orange text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-2s shadow-lg">Cotizar Aquí</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                    <img src="./imagenesotraseccion/39.webp" alt="Agregados de Calidad" class="w-full h-full object-cover brightness-80 transition-all duration-1000 hover:brightness-100 hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4">
+                            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold uppercase tracking-wider mb-6 animate__animated animate__fadeIn animate__delay-1s drop-shadow-lg font-poppins">Agregados de Calidad para Construcción</h2>
+                            <button onclick="window.location.href='cotizacion.html';" class="bg-brand-red hover:bg-brand-orange text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-2s shadow-lg">Cotizar Aquí</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                    <img src="./imagenesotraseccion/38.webp" alt="Distribución en Lambayeque" class="w-full h-full object-cover brightness-80 transition-all duration-1000 hover:brightness-100 hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4">
+                            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold uppercase tracking-wider mb-6 animate__animated animate__fadeIn animate__delay-1s drop-shadow-lg font-poppins">Distribución a toda la Región Lambayeque</h2>
+                            <button onclick="window.location.href='cotizacion.html';" class="bg-brand-red hover:bg-brand-orange text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-2s shadow-lg">Cotizar Aquí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 hover:scale-110">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 hover:scale-110">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Indicators -->
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+                <button class="w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-90 transition-all duration-300" onclick="goToSlide(0)" id="indicator-0"></button>
+                <button class="w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-90 transition-all duration-300" onclick="goToSlide(1)" id="indicator-1"></button>
+                <button class="w-4 h-4 rounded-full bg-white bg-opacity-50 hover:bg-opacity-90 transition-all duration-300" onclick="goToSlide(2)" id="indicator-2"></button>
+            </div>
+        </div>
+
+        <!-- Enhanced Feature Cards -->
+        <div class="absolute -bottom-32 md:-bottom-40 left-1/2 transform -translate-x-1/2 z-20 w-11/12 max-w-6xl">
+            <div class="flex justify-center space-x-3 sm:space-x-4 lg:space-x-6 p-4 sm:p-6 no-scrollbar overflow-x-auto">
+                <div class="flex-shrink-0 w-32 sm:w-36 md:w-44 lg:w-48 bg-white rounded-xl shadow-lg text-center p-4 sm:p-5 border-2 border-gray-200 transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-3 hover:scale-105 hover:shadow-2xl group">
+                    <i class="fas fa-truck text-brand-red text-2xl sm:text-3xl mb-3 animate-truck-move group-hover:text-white transition-colors duration-300"></i>
+                    <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-2 group-hover:text-white">Envíos de Lunes a Sábado</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 group-hover:text-gray-300">L-S de 5am hasta las 4pm</p>
+                </div>
+                <div class="flex-shrink-0 w-32 sm:w-36 md:w-44 lg:w-48 bg-white rounded-xl shadow-lg text-center p-4 sm:p-5 border-2 border-gray-200 transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-3 hover:scale-105 hover:shadow-2xl group">
+                    <i class="fas fa-industry text-brand-red text-2xl sm:text-3xl mb-3 animate-bounce-custom group-hover:text-white transition-colors duration-300"></i>
+                    <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-2 group-hover:text-white">Directo de Cantera</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 group-hover:text-gray-300">Precio por mayor desde 10 m³</p>
+                </div>
+                <div class="flex-shrink-0 w-32 sm:w-36 md:w-44 lg:w-48 bg-white rounded-xl shadow-lg text-center p-4 sm:p-5 border-2 border-gray-200 transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-3 hover:scale-105 hover:shadow-2xl group">
+                    <i class="fas fa-credit-card text-brand-red text-2xl sm:text-3xl mb-3 animate-sparkle group-hover:text-white transition-colors duration-300"></i>
+                    <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-2 group-hover:text-white">Tarjetas de Crédito y Débito</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 group-hover:text-gray-300">Aceptamos todas las tarjetas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Carousel -->
+    <section class="py-20 mt-16">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Product 1 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/arena-amarilla.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Arena Amarilla">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Arena amarilla</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 21.00</h4>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/chancado12.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Piedra Chancada">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Piedra chancada 1/2</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 30.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/chancda34.jpeg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Piedra Chancada de 3/4">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Piedra Chancada de 3/4</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 36.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/piedrabase.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Piedra Base Azul Seleccionada">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Piedra Base Azul Seleccionada</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 20.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/rioarena.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Arena Lavada de Río">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Arena lavada de río</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 21.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/rocaa.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Roca">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Roca</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 29.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/rocapequena.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Roca Pequeña">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Piedra base al barrer</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 32.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/confitillohyc.jpeg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Confitillo">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Confitillo</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 15.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/polvochancado.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Polvo de Piedra Chancada">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Polvo de Piedra Chancada</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 9.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/hormigon-azul.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Hormigón">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Hormigón</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 30.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/afirmado.jpeg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Afirmado">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Afirmado</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 6.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/over.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Piedra Over Azul Clasificado">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Piedra Over Azul Clasificado</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 36.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/arena-fina.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Arena Fina">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Arena Fina</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 36.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/Ripio.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Ripio Corriente">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Ripio Corriente</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 36.00</h4>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="swiper-slide">
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl max-w-xs mx-auto">
+                        <div class="w-full h-48 overflow-hidden rounded-2xl mb-4 relative">
+                            <img src="assets/images/agregados/over-zarandeado.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 hover:rotate-1" alt="Over Zarandeado">
+                        </div>
+                        <div class="text-yellow-400 mb-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h6 class="text-lg font-semibold text-gray-800 mb-2">Over Zarandeado</h6>
+                        <h4 class="text-brand-orange font-bold"><span class="text-sm">desde</span> S/ 36.00</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8">
+            <div class="text-center">
+                <a href="agregados.html" class="inline-block bg-brand-orange hover:bg-brand-red text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+                    <span class="relative z-10">Ver todos los agregados</span>
+                    <div class="absolute inset-0 bg-white opacity-30 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-brand-red uppercase tracking-wide mb-12 font-poppins">
+                <i class="fas fa-th-list mr-3"></i>Categorías de Productos
+            </h2>
+            <div class="flex flex-wrap justify-center gap-8 mb-12">
+                <div class="text-center">
+                    <img src="img/electrico.jpg" alt="Equipos Eléctricos" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mx-auto mb-4 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:brightness-110 cursor-pointer">
+                    <h3 class="text-lg font-semibold text-gray-800">Equipos Eléctricos</h3>
+                </div>
+                <div class="text-center">
+                    <img src="img/herramientas.jpg" alt="Herramientas" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mx-auto mb-4 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:brightness-110 cursor-pointer">
+                    <h3 class="text-lg font-semibold text-gray-800">Herramientas</h3>
+                </div>
+                <div class="text-center">
+                    <img src="img/seguridad.jpg" alt="Equipos de Seguridad" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mx-auto mb-4 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:brightness-110 cursor-pointer">
+                    <h3 class="text-lg font-semibold text-gray-800">Equipos de Seguridad</h3>
+                </div>
+                <div class="text-center">
+                    <img src="img/materiales construccion/cemento.jpg" alt="Construcción" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mx-auto mb-4 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:brightness-110 cursor-pointer">
+                    <h3 class="text-lg font-semibold text-gray-800">Construcción</h3>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="productos.php" class="inline-block bg-brand-orange hover:bg-brand-red text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+                    <span class="relative z-10">Ver todos los productos</span>
+                    <div class="absolute inset-0 bg-white opacity-30 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 font-poppins">Videos (<a href="https://www.tiktok.com/@chiclayojh?lang=en" target="_blank" class="text-red-500 hover:text-red-600">@chiclayojh</a>)</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="aspect-video">
+                        <video controls preload="auto" class="w-full h-full object-cover rounded-t-lg">
+                            <source src="./imagenesotraseccion/trabajadores.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-gray-700">Cargando arena gruesa amarilla H&C #arenaamarilla #cantera #arengruesa #agregados</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="aspect-video">
+                        <video controls preload="auto" class="w-full h-full object-cover rounded-t-lg">
+                            <source src="./imagenesotraseccion/chamba.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-gray-700">Un día en la ferreteria #ferromateriales #fierros #arengruesa #agregados</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="aspect-video">
+                        <video controls preload="auto" class="w-full h-full object-cover rounded-t-lg">
+                            <source src="./imagenesotraseccion/ladrillos.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-gray-700">Ladrillos de buena calidad #ladrillos #ferromateriales #arengruesa #agregados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative overflow-hidden">
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+            <source src="./imagenesotraseccion/video-ladrillo.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        
+        <div class="relative z-10 bg-black bg-opacity-60 text-white py-12">
+            <!-- Footer Top -->
+            <div class="container mx-auto px-4 border-b border-gray-300 pb-8 mb-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="flex flex-col items-center">
+                        <img src="img/FOOTER/mano.svg" alt="Envíos a todo Chiclayo" class="w-12 h-12 mb-3">
+                        <p class="text-sm"><i class="fas fa-truck mr-2"></i>Envíos a todo Chiclayo<br><small>Rápido y seguro</small></p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="img/FOOTER/garantia-.svg" alt="Garantía en nuestros productos" class="w-12 h-12 mb-3">
+                        <p class="text-sm"><i class="fas fa-shield-alt mr-2"></i>Garantía en todos nuestros productos<br><small>Hasta 3 años de garantía</small></p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="img/FOOTER/distribuidor.svg" alt="Distribuidores autorizados" class="w-12 h-12 mb-3">
+                        <p class="text-sm"><i class="fas fa-certificate mr-2"></i>Distribuidores autorizados<br><small>Más de 10 marcas</small></p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="img/FOOTER/compras-.svg" alt="Compra fácil y segura" class="w-12 h-12 mb-3">
+                        <p class="text-sm"><i class="fas fa-shopping-cart mr-2"></i>Compra fácil y segura<br><small>Compras 100% seguras</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 animate-pulse"><i class="fas fa-headset mr-2"></i>Servicio al Cliente</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-white hover:text-orange-400 transition-colors relative group"><i class="fas fa-question-circle mr-2"></i>Preguntas Frecuentes<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a></li>
+                            <li><a href="#" class="text-white hover:text-orange-400 transition-colors relative group">Libro de Reclamos<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a></li>
+                            <li><a href="#" class="text-white hover:text-orange-400 transition-colors relative group">Alquiler de Maquinaria<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 animate-pulse"><i class="fas fa-info-circle mr-2"></i>Información</h4>
+                        <p class="text-sm mb-3">Tienda virtual de agregados de construcción al por mayor desde 10 m<sup>3</sup>. Llámanos al <a href="tel:+51971164073" class="text-white hover:text-orange-400 transition-colors underline">971 164 073</a>.</p>
+                        <p class="text-sm">Encuéntranos en <a href="https://web.facebook.com/p/HC-Ferromateriales-SRL-100028409425411/?_rdc=1&_rdr" target="_blank" class="text-white hover:text-orange-400 transition-colors"><i class="fab fa-facebook mr-1"></i>/FerroMateriales</a></p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 animate-pulse"><i class="fas fa-store mr-2"></i>Nuestras Tiendas Autorizadas</h4>
+                        <p class="text-sm mb-2">Calle: San Francisco Mz. "E" Lt.5 C.P. San Francisco de Asis, Chiclayo</p>
+                        <p class="text-sm">Carretera Pomalca Km 3.50, Mz. E, Lote 6, Urb. Los Precursores, Chiclayo Lambayeque</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 animate-pulse"><i class="fas fa-clock mr-2"></i>Horario</h4>
+                        <p class="text-sm mb-2">Lunes a Sábado 7:00 am - 6:00 pm</p>
+                        <p class="text-sm">Domingo 8:00 am - 1:00 pm</p>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom Bar -->
+                <div class="border-t border-gray-300 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm mb-4 md:mb-0">&copy; 2024 FerroMateriales. Todos los derechos reservados.</p>
+                    <div class="flex space-x-3">
+                        <img src="assets/images/icon/visa.png" alt="Visa" class="w-8 h-8 transition-transform hover:scale-110">
+                        <img src="assets/images/icon/mastercard.png" alt="MasterCard" class="w-8 h-8 transition-transform hover:scale-110">
+                        <img src="assets/images/icon/paypal.png" alt="PayPal" class="w-8 h-8 transition-transform hover:scale-110">
+                        <img src="assets/images/icon/american-express.png" alt="American Express" class="w-8 h-8 transition-transform hover:scale-110">
+                        <img src="assets/images/icon/discover.png" alt="Discover" class="w-8 h-8 transition-transform hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <!-- WhatsApp Button -->
+    <button onclick="openContactModal()" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </button>
+
+    <!-- Reviews Button -->
+    <button onclick="openReviewModal()" class="fixed bottom-20 right-5 bg-red-800 hover:bg-orange-500 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 z-50">
+        <i class="fas fa-comments text-2xl"></i>
+    </button>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full">
+            <div class="bg-red-800 text-white p-4 rounded-t-lg flex justify-between items-center">
+                <h5 class="text-lg font-bold">Contacta con cualquiera de nuestras empleadas para solventar tus dudas.</h5>
+                <button onclick="closeContactModal()" class="text-white text-2xl hover:text-gray-300">&times;</button>
+            </div>
+            <div class="p-6">
+                <p class="text-center mb-6 text-gray-700">Nuestro equipo está listo para atenderle</p>
+
+                <!-- Contact Card 1 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Nayeli" class="w-12 h-12 rounded-full mr-4">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-800">Nayeli</h5>
+                        <p class="text-sm text-gray-600">Cotizaciones y Ventas</p>
+                        <span class="text-xs text-green-600 font-semibold">En línea</span>
+                    </div>
+                    <a href="https://web.whatsapp.com/send?phone=+51903511797&text=Hola%20Nayeli,%20quisiera%20solicitar%20una%20cotización%20de%20materiales%20de%20ferretería." target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded text-sm transition-colors">
+                        Enviar mensaje
+                    </a>
+                </div>
+
+                <!-- Contact Card 2 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4">
+                    <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Karen" class="w-12 h-12 rounded-full mr-4">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-800">Karen</h5>
+                        <p class="text-sm text-gray-600">Cotizaciones y Mercadeo</p>
+                        <span class="text-xs text-green-600 font-semibold">En línea</span>
+                    </div>
+                    <a href="https://web.whatsapp.com/send?phone=+51971164073&text=Hola%20Karen,%20quisiera%20solicitar%20una%20cotización%20de%20materiales%20de%20ferretería." target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded text-sm transition-colors">
+                        Enviar mensaje
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full">
+            <div class="bg-red-800 text-white p-4 rounded-t-lg flex justify-between items-center">
+                <h5 class="text-lg font-bold">Opiniones de Clientes</h5>
+                <button onclick="closeReviewModal()" class="text-white text-2xl hover:text-gray-300">&times;</button>
+            </div>
+            <div class="p-6">
+                <p class="text-center mb-6 text-gray-700">Lo que nuestros clientes opinan sobre nosotros:</p>
+
+                <!-- Review 1 -->
+                <div class="flex items-start bg-gray-50 rounded-lg p-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1" class="w-12 h-12 rounded-full mr-4">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-800 mb-1">Carlos Ruiz</h5>
+                        <p class="text-sm text-gray-600 mb-2">¡Excelente atención! Recibí todo lo que necesitaba para mi proyecto.</p>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="flex items-start bg-gray-50 rounded-lg p-4 mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Cliente 2" class="w-12 h-12 rounded-full mr-4">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-800 mb-1">María González</h5>
+                        <p class="text-sm text-gray-600 mb-2">Gran variedad de productos y precios accesibles. ¡Muy recomendable!</p>
+                        <div class="text-yellow-400">★★★★☆</div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="flex items-start bg-gray-50 rounded-lg p-4">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente 3" class="w-12 h-12 rounded-full mr-4">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-gray-800 mb-1">Jorge Pérez</h5>
+                        <p class="text-sm text-gray-600 mb-2">El servicio fue rápido y eficiente, sin duda volveré a comprar aquí.</p>
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const carousel = document.querySelector('.carousel-inner');
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            updateIndicators();
+        }
+
+        function updateIndicators() {
+            for (let i = 0; i < totalSlides; i++) {
+                const indicator = document.getElementById(`indicator-${i}`);
+                if (indicator) {
+                    if (i === currentSlide) {
+                        indicator.classList.remove('bg-opacity-50');
+                        indicator.classList.add('bg-opacity-100');
+                    } else {
+                        indicator.classList.remove('bg-opacity-100');
+                        indicator.classList.add('bg-opacity-50');
+                    }
+                }
+            }
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance carousel
+        setInterval(nextSlide, 4000);
+
+        // Swiper initialization
+        document.addEventListener('DOMContentLoaded', () => {
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    768: { slidesPerView: 3, spaceBetween: 30 },
+                    1024: { slidesPerView: 4, spaceBetween: 40 },
+                },
+            });
+        });
+
+        // Menu toggle
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        // Modal functions
+        function openContactModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+        }
+
+        function openReviewModal() {
+            document.getElementById('reviewModal').classList.remove('hidden');
+        }
+
+        function closeReviewModal() {
+            document.getElementById('reviewModal').classList.add('hidden');
+        }
+
+        // Close modals when clicking outside
+        document.getElementById('contactModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeContactModal();
+            }
+        });
+
+        document.getElementById('reviewModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeReviewModal();
+            }
+        });
+
+        // Close sidebar with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const sidebar = document.getElementById('sidebar');
+                if (sidebar && !sidebar.classList.contains('-translate-x-full')) {
+                    toggleMenu();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
